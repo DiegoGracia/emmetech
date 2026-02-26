@@ -27,7 +27,7 @@ export default function Header() {
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2">
           <span className="text-xl font-bold tracking-tight text-white">
-            EMME<span className="teal-glow"> TECHNOLOGIES</span>
+            EMX<span className="teal-glow">TECH</span>
           </span>
         </Link>
 

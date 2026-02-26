@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="text-xl font-bold tracking-tight text-white">
-              EMME<span className="teal-glow"> TECHNOLOGIES</span>
+              EMX<span className="teal-glow">TECH</span>
             </p>
             <p className="mt-3 text-sm text-white/55">{t("tagline")}</p>
           </div>
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/[0.08] pt-6 text-center text-xs text-white/35">
-          © {year} EMME Technologies. {t("rights")}
+          © {year} EMXTECH. {t("rights")}
         </div>
       </div>
     </footer>

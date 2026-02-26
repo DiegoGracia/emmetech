@@ -18,8 +18,8 @@ export async function POST(req: NextRequest) {
   // import { Resend } from "resend";
   // const resend = new Resend(process.env.RESEND_API_KEY);
   // await resend.emails.send({
-  //   from: "contact@emmetechnologies.com",
-  //   to: "hello@emmetechnologies.com",
+  //   from: "contact@emxtech.eu",
+  //   to: "info@emxtech.eu",
   //   subject: `New contact from ${name}`,
   //   html: `<p><strong>Name:</strong> ${name}</p>
   //          <p><strong>Email:</strong> ${email}</p>

@@ -94,28 +94,8 @@
 }
 
 /* =====================================================
-   SPACE — KEYFRAMES
+   FUTURISTIC — KEYFRAMES
    ===================================================== */
-
-@keyframes stars-drift-slow {
-    from { transform: translateY(0px); }
-    to   { transform: translateY(-2000px); }
-}
-
-@keyframes stars-drift-mid {
-    from { transform: translateY(0px); }
-    to   { transform: translateY(-2000px); }
-}
-
-@keyframes stars-drift-fast {
-    from { transform: translateY(0px); }
-    to   { transform: translateY(-2000px); }
-}
-
-@keyframes nebula-pulse {
-    0%, 100% { opacity: 0.12; transform: scale(1); }
-    50%       { opacity: 0.22; transform: scale(1.06); }
-}
 
 @keyframes teal-glow-pulse {
     0%, 100% { box-shadow: 0 0 8px 2px rgba(45, 122, 132, 0.35); }
@@ -123,106 +103,10 @@
 }
 
 /* =====================================================
-   SPACE + GLASSMORPHISM UTILITIES
+   FUTURISTIC + GLASSMORPHISM UTILITIES
    ===================================================== */
 
 @layer components {
-
-    /* --- Fixed full-screen background --- */
-    .space-bg {
-        position: fixed;
-        inset: 0;
-        z-index: 0;
-        background: radial-gradient(
-            ellipse 120% 80% at 50% -10%,
-            #0d1a3a 0%,
-            #04060F 60%
-        );
-        overflow: hidden;
-        pointer-events: none;
-    }
-
-    /* --- Star layers (stars via box-shadow on 1×1px div) --- */
-    .stars-layer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1px;
-        height: 1px;
-        border-radius: 50%;
-    }
-
-    .stars-sm { animation: stars-drift-slow 200s linear infinite; }
-    .stars-md { animation: stars-drift-mid  140s linear infinite; }
-    .stars-lg { animation: stars-drift-fast  90s linear infinite; }
-
-    /* --- Nebula blobs --- */
-    .nebula-blob {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(80px);
-        animation: nebula-pulse 14s ease-in-out infinite;
-        pointer-events: none;
-    }
-
-    .nebula-teal {
-        width: 600px; height: 400px;
-        background: radial-gradient(ellipse, rgba(45,122,132,0.38) 0%, transparent 70%);
-        top: -5%; right: -8%;
-    }
-
-    .nebula-navy {
-        width: 700px; height: 500px;
-        background: radial-gradient(ellipse, rgba(27,43,94,0.55) 0%, transparent 70%);
-        bottom: 8%; left: -12%;
-        animation-delay: -7s;
-    }
-
-    .nebula-teal-2 {
-        width: 400px; height: 300px;
-        background: radial-gradient(ellipse, rgba(61,232,250,0.10) 0%, transparent 70%);
-        top: 38%; right: 8%;
-        animation-delay: -3.5s;
-    }
-
-    /* --- Decorative planets --- */
-    .planet {
-        position: absolute;
-        border-radius: 50%;
-        pointer-events: none;
-    }
-
-    .planet-teal {
-        width: 180px; height: 180px;
-        background: radial-gradient(
-            circle at 35% 30%,
-            #3DE8FA 0%, #2D7A84 35%, #1F5960 65%, #0a1f24 100%
-        );
-        box-shadow: 0 0 50px 10px rgba(45,122,132,0.30), inset -20px -20px 40px rgba(0,0,0,0.55);
-        top: 7%; right: 5%;
-        opacity: 0.72;
-    }
-
-    .planet-teal::after {
-        content: '';
-        position: absolute;
-        top: 50%; left: 50%;
-        width: 250px; height: 65px;
-        border: 1.5px solid rgba(45,122,132,0.25);
-        border-radius: 50%;
-        transform: translate(-50%, -50%) rotateX(76deg);
-    }
-
-    .planet-navy {
-        width: 90px; height: 90px;
-        background: radial-gradient(
-            circle at 38% 30%,
-            #3a5090 0%, #1B2B5E 42%, #0d1830 100%
-        );
-        box-shadow: 0 0 30px 6px rgba(27,43,94,0.40), inset -10px -10px 22px rgba(0,0,0,0.65);
-        bottom: 22%; left: 2.5%;
-        opacity: 0.55;
-    }
 
     /* --- Glassmorphism panels --- */
     .glass {

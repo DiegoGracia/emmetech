@@ -5,7 +5,7 @@ export default config({
     kind: "local",
   },
   ui: {
-    brand: { name: "Company CMS" },
+    brand: { name: "EMXTECH CMS" },
   },
   collections: {
     services: collection({

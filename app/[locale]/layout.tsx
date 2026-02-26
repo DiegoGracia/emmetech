@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SpaceBackground from "@/components/layout/SpaceBackground";
+import NeuralNetwork from "@/components/layout/NeuralNetwork";
 import "../globals.css";
 
 const geist = Geist({
@@ -15,7 +16,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "EMME Technologies — Baltic Digital Experts",
+  title: "EMXTECH — Baltic Digital Experts",
   description:
     "Fast, affordable, and measurable digital solutions for Baltic SMEs. Web development, digital marketing, and IT consulting.",
 };
@@ -39,6 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className={`${geist.variable} font-sans antialiased relative`}>
         <NextIntlClientProvider messages={messages}>
           <SpaceBackground />
+          <NeuralNetwork />
           <Header />
           <main className="relative z-10">{children}</main>
           <Footer />
