@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Nom de l'Entreprise",
+      "subtitle": "Votre partenaire technologique de confiance en Europe.",
+      "cta_primary": "Nous contacter",
+      "cta_secondary": "Nos Services"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer le message"
+    }
+  }
+}

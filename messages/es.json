@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "get_started": "Empezar"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Expertos Digitales Bálticos",
+      "title": "Soluciones Digitales Rápidas, Asequibles y Medibles",
+      "subtitle": "EMME Technologies impulsa a las pymes del Báltico con servicios digitales de precisión — con la calidad de una agencia boutique y la agilidad de una startup.",
+      "cta_primary": "Iniciar un Proyecto",
+      "cta_secondary": "Ver Servicios"
+    },
+    "services_section": {
+      "title": "Lo Que Hacemos",
+      "subtitle": "Tres capacidades clave, un equipo integrado."
+    },
+    "cta_strip": {
+      "title": "¿Listo para construir algo grande?",
+      "subtitle": "Hablemos de tu proyecto. Sin compromisos, sin presión.",
+      "cta": "Reserva una Llamada Gratuita"
+    }
+  },
+  "services": {
+    "web_dev": {
+      "title": "Desarrollo Web",
+      "summary": "Sitios web y aplicaciones personalizadas con alto rendimiento.",
+      "description": "Desde sitios de marketing hasta aplicaciones web completas, construimos productos digitales rápidos, accesibles y escalables adaptados a tus objetivos de negocio."
+    },
+    "digital_marketing": {
+      "title": "Marketing Digital",
+      "summary": "Campañas basadas en datos que generan resultados medibles.",
+      "description": "SEO, medios de pago, estrategia de contenidos y analítica — diseñamos sistemas de marketing que atraen, convierten y fidelizan a tus clientes ideales."
+    },
+    "it_consulting": {
+      "title": "Consultoría TI",
+      "summary": "Orientación tecnológica estratégica para empresas en crecimiento.",
+      "description": "Desde la selección de tecnología hasta hojas de ruta de transformación digital, brindamos asesoramiento claro y accionable que alinea la tecnología con tu estrategia de negocio."
+    }
+  },
+  "about": {
+    "title": "Sobre EMME Technologies",
+    "subtitle": "Una empresa de servicios digitales en remoto construida para el ecosistema báltico.",
+    "mission_label": "Nuestra Misión",
+    "vision_label": "Nuestra Visión",
+    "mission": "Empoderar a las pymes bálticas con soluciones digitales rápidas, asequibles y medibles — entregadas por un equipo experto distribuido con la precisión de una agencia boutique y la agilidad de una startup.",
+    "vision": "Convertirnos en la empresa de servicios digitales en remoto más confiable del ecosistema báltico y de e-Residencia para 2029, reconocida por su profundidad técnica, rigor financiero y excelencia operativa."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas.",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "company": "Empresa (opcional)",
+      "message": "¿En qué podemos ayudarte?",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado! Nos pondremos en contacto pronto.",
+      "error": "Algo salió mal. Por favor intenta de nuevo."
+    },
+    "or_book": "O agenda una llamada directamente",
+    "book_cta": "Programar una Reunión",
+    "whatsapp_cta": "Chatear por WhatsApp"
+  },
+  "footer": {
+    "tagline": "Servicios digitales en remoto para el ecosistema báltico.",
+    "links_title": "Enlaces Rápidos",
+    "services_title": "Servicios",
+    "rights": "Todos los derechos reservados."
+  }
+}

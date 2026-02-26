@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "get_started": "Get Started"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Baltic Digital Experts",
+      "title": "Fast, Affordable & Measurable Digital Solutions",
+      "subtitle": "EMME Technologies empowers Baltic SMEs with precision digital services — delivered with boutique-agency quality and startup agility.",
+      "cta_primary": "Start a Project",
+      "cta_secondary": "Explore Services"
+    },
+    "services_section": {
+      "title": "What We Do",
+      "subtitle": "Three core capabilities, one integrated team."
+    },
+    "cta_strip": {
+      "title": "Ready to build something great?",
+      "subtitle": "Let's talk about your project. No commitments, no hard sell.",
+      "cta": "Book a Free Call"
+    }
+  },
+  "services": {
+    "web_dev": {
+      "title": "Web Development",
+      "summary": "Custom websites and web applications built to perform.",
+      "description": "From marketing sites to full-stack web applications, we build fast, accessible, and scalable digital products tailored to your business goals."
+    },
+    "digital_marketing": {
+      "title": "Digital Marketing",
+      "summary": "Data-driven campaigns that generate measurable results.",
+      "description": "SEO, paid media, content strategy, and analytics — we design marketing systems that attract, convert, and retain your ideal customers."
+    },
+    "it_consulting": {
+      "title": "IT Consulting",
+      "summary": "Strategic technology guidance for growing businesses.",
+      "description": "From tech stack selection to digital transformation roadmaps, we provide clear, actionable advice that aligns technology with your business strategy."
+    }
+  },
+  "about": {
+    "title": "About EMME Technologies",
+    "subtitle": "A remote-first digital services firm built for the Baltic ecosystem.",
+    "mission_label": "Our Mission",
+    "vision_label": "Our Vision",
+    "mission": "Empower Baltic SMEs with fast, affordable, and measurable digital solutions — delivered by a distributed expert team with the precision of a boutique agency and the agility of a startup.",
+    "vision": "Become the most trusted remote-first digital services firm serving the Baltic and e-Residency ecosystem by 2029, recognized for technical depth, financial rigor, and operational excellence."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Tell us about your project and we'll get back to you within 24 hours.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company (optional)",
+      "message": "How can we help?",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent! We'll be in touch soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "or_book": "Or book a call directly",
+    "book_cta": "Schedule a Meeting",
+    "whatsapp_cta": "Chat on WhatsApp"
+  },
+  "footer": {
+    "tagline": "Remote-first digital services for the Baltic ecosystem.",
+    "links_title": "Quick Links",
+    "services_title": "Services",
+    "rights": "All rights reserved."
+  }
+}
