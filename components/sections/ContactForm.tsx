@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
 
 export default function ContactForm() {
   const t = useTranslations("contact.form");
@@ -32,75 +31,61 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
+    <div className="glass-md rounded-2xl p-8">
       {status === "success" ? (
         <div className="flex flex-col items-center justify-center py-10 text-center">
-          <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-teal/10 text-3xl">
+          <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-teal/[0.15] text-3xl teal-glow">
             ✓
           </div>
-          <p className="text-lg font-semibold text-navy">{t("success")}</p>
+          <p className="text-lg font-semibold text-white">{t("success")}</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700">
+              <label className="mb-1 block text-sm font-medium text-white/70">
                 {t("name")}
               </label>
-              <input
-                name="name"
-                type="text"
-                required
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
-              />
+              <input name="name" type="text" required className="input-space" />
             </div>
             <div>
-              <label className="mb-1 block text-sm font-medium text-gray-700">
+              <label className="mb-1 block text-sm font-medium text-white/70">
                 {t("email")}
               </label>
-              <input
-                name="email"
-                type="email"
-                required
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
-              />
+              <input name="email" type="email" required className="input-space" />
             </div>
           </div>
 
           <div>
-            <label className="mb-1 block text-sm font-medium text-gray-700">
+            <label className="mb-1 block text-sm font-medium text-white/70">
               {t("company")}
             </label>
-            <input
-              name="company"
-              type="text"
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
-            />
+            <input name="company" type="text" className="input-space" />
           </div>
 
           <div>
-            <label className="mb-1 block text-sm font-medium text-gray-700">
+            <label className="mb-1 block text-sm font-medium text-white/70">
               {t("message")}
             </label>
             <textarea
               name="message"
               required
               rows={5}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal resize-none"
+              className="input-space resize-none"
             />
           </div>
 
           {status === "error" && (
-            <p className="text-sm text-red-500">{t("error")}</p>
+            <p className="text-sm text-red-400">{t("error")}</p>
           )}
 
-          <Button
+          <button
             type="submit"
             disabled={status === "sending"}
-            className="w-full bg-navy hover:bg-navy-light text-white font-semibold py-3"
+            className="btn-teal-glow w-full rounded-lg py-3 font-semibold disabled:opacity-60"
           >
             {status === "sending" ? t("sending") : t("submit")}
-          </Button>
+          </button>
         </form>
       )}
     </div>

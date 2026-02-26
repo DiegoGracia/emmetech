@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -23,12 +22,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-50 glass-header">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tight text-navy">
-            EMME<span className="text-teal"> TECHNOLOGIES</span>
+          <span className="text-xl font-bold tracking-tight text-white">
+            EMME<span className="teal-glow"> TECHNOLOGIES</span>
           </span>
         </Link>
 
@@ -38,7 +37,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-gray-600 transition-colors hover:text-navy"
+              className="text-sm font-medium text-white/70 transition-colors hover:text-white"
             >
               {link.label}
             </Link>
@@ -49,27 +48,25 @@ export default function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <Link
             href={otherLocalePath}
-            className="text-sm font-medium text-gray-500 uppercase hover:text-navy transition-colors"
+            className="text-sm font-medium text-white/50 uppercase hover:text-white transition-colors"
           >
             {otherLocale}
           </Link>
-          <Button asChild size="sm" className="bg-navy hover:bg-navy-light text-white">
-            <Link href={`/${locale}/contact`}>{t("get_started")}</Link>
-          </Button>
+          <Link
+            href={`/${locale}/contact`}
+            className="btn-teal-glow rounded-md px-4 py-2 text-sm font-semibold"
+          >
+            {t("get_started")}
+          </Link>
         </div>
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-gray-600"
+          className="md:hidden p-2 text-white/70 hover:text-white"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -81,13 +78,13 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="border-t border-gray-100 bg-white px-4 pb-4 md:hidden">
+        <div className="glass-header border-t border-white/[0.08] px-4 pb-4 md:hidden">
           <nav className="flex flex-col gap-3 pt-3">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-700 hover:text-navy"
+                className="text-sm font-medium text-white/70 hover:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -96,13 +93,17 @@ export default function Header() {
             <div className="mt-2 flex items-center gap-3">
               <Link
                 href={otherLocalePath}
-                className="text-sm font-medium text-gray-500 uppercase"
+                className="text-sm font-medium text-white/50 uppercase hover:text-white"
               >
                 {otherLocale}
               </Link>
-              <Button asChild size="sm" className="bg-navy text-white">
-                <Link href={`/${locale}/contact`}>{t("get_started")}</Link>
-              </Button>
+              <Link
+                href={`/${locale}/contact`}
+                className="btn-teal-glow rounded-md px-4 py-2 text-sm font-semibold"
+                onClick={() => setMenuOpen(false)}
+              >
+                {t("get_started")}
+              </Link>
             </div>
           </nav>
         </div>

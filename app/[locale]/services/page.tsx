@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import CTAStrip from "@/components/sections/CTAStrip";
 
 const serviceKeys = ["web_dev", "digital_marketing", "it_consulting"] as const;
@@ -20,10 +19,10 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-20 text-white">
+      <section className="section-space py-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold sm:text-5xl">{nav("services")}</h1>
-          <p className="mt-4 text-xl text-gray-300 max-w-2xl">
+          <p className="mt-4 text-xl text-white/65 max-w-2xl">
             {locale === "en"
               ? "Everything you need to grow your digital presence and operations."
               : "Todo lo que necesitas para hacer crecer tu presencia digital y operaciones."}
@@ -32,36 +31,34 @@ export default function ServicesPage() {
       </section>
 
       {/* Services detail */}
-      <section className="bg-gray-50 py-20">
+      <section className="section-space py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {serviceKeys.map((key) => (
               <Card
                 key={key}
-                className="border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow"
+                className="glass rounded-xl transition-all hover:teal-glow-border bg-transparent border-white/10"
               >
                 <CardHeader>
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-navy text-white text-2xl">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-teal/[0.15] text-teal-light text-2xl">
                     {icons[key]}
                   </div>
-                  <CardTitle className="text-xl text-navy">
+                  <CardTitle className="text-xl text-white">
                     {t(`${key}.title`)}
                   </CardTitle>
-                  <p className="text-sm font-medium text-teal">{t(`${key}.summary`)}</p>
+                  <p className="text-sm font-medium teal-glow">{t(`${key}.summary`)}</p>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-white/60 leading-relaxed">
                     {t(`${key}.description`)}
                   </p>
                   <div className="mt-6">
-                    <Button
-                      asChild
-                      className="w-full bg-navy hover:bg-navy-light text-white"
+                    <Link
+                      href={`/${locale}/contact`}
+                      className="btn-teal-glow w-full rounded-lg py-2.5 text-sm font-semibold"
                     >
-                      <Link href={`/${locale}/contact`}>
-                        {locale === "en" ? "Get a Quote" : "Solicitar Presupuesto"}
-                      </Link>
-                    </Button>
+                      {locale === "en" ? "Get a Quote" : "Solicitar Presupuesto"}
+                    </Link>
                   </div>
                 </CardContent>
               </Card>

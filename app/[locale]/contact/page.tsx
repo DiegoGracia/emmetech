@@ -6,30 +6,30 @@ export default function ContactPage() {
   const locale = useLocale();
 
   return (
-    <section className="min-h-screen bg-gray-50 py-20">
+    <section className="section-space min-h-screen py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Left: Info */}
           <div>
-            <h1 className="text-4xl font-bold text-navy">{t("title")}</h1>
-            <p className="mt-4 text-lg text-gray-600">{t("subtitle")}</p>
+            <h1 className="text-4xl font-bold text-white">{t("title")}</h1>
+            <p className="mt-4 text-lg text-white/65">{t("subtitle")}</p>
 
             <div className="mt-10 space-y-6">
               {/* Book a meeting */}
-              <div className="rounded-xl border border-gray-200 bg-white p-6">
-                <p className="font-semibold text-navy">{t("or_book")}</p>
+              <div className="glass rounded-xl p-6">
+                <p className="font-semibold text-white">{t("or_book")}</p>
                 <a
                   href="https://cal.com/emme-technologies"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-2 rounded-lg bg-navy px-5 py-2.5 text-sm font-semibold text-white hover:bg-navy-light transition-colors"
+                  className="btn-teal-glow mt-3 inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold"
                 >
                   📅 {t("book_cta")}
                 </a>
               </div>
 
               {/* WhatsApp */}
-              <div className="rounded-xl border border-gray-200 bg-white p-6">
+              <div className="glass rounded-xl p-6">
                 <a
                   href="https://wa.me/placeholder"
                   target="_blank"

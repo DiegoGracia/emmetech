@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SpaceBackground from "@/components/layout/SpaceBackground";
 import "../globals.css";
 
 const geist = Geist({
@@ -35,10 +36,11 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${geist.variable} font-sans antialiased`}>
+      <body className={`${geist.variable} font-sans antialiased relative`}>
         <NextIntlClientProvider messages={messages}>
+          <SpaceBackground />
           <Header />
-          <main>{children}</main>
+          <main className="relative z-10">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>
