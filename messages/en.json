@@ -9,14 +9,14 @@
   "home": {
     "hero": {
       "tagline": "Baltic Digital Experts",
-      "title": "Fast, Affordable & Measurable Digital Solutions",
-      "subtitle": "EMXTECH empowers Baltic SMEs with precision digital services — delivered with boutique-agency quality and startup agility.",
+      "title": "Enterprise-Grade Digital Solutions. Fixed Price.",
+      "subtitle": "EMXTECH delivers EAA-compliant digital solutions to Baltic SMEs — transparent fixed pricing, WCAG 2.1 AA & EN 301 549 certified, zero surprises.",
       "cta_primary": "Start a Project",
-      "cta_secondary": "Explore Services"
+      "cta_secondary": "See Pricing"
     },
     "services_section": {
-      "title": "What We Do",
-      "subtitle": "Three core capabilities, one integrated team."
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Three fixed-price packages built to European enterprise standards."
     },
     "cta_strip": {
       "title": "Ready to build something great?",
@@ -25,28 +25,15 @@
     }
   },
   "services": {
-    "web_dev": {
-      "title": "Web Development",
-      "summary": "Custom websites and web applications built to perform.",
-      "description": "From marketing sites to full-stack web applications, we build fast, accessible, and scalable digital products tailored to your business goals."
-    },
-    "digital_marketing": {
-      "title": "Digital Marketing",
-      "summary": "Data-driven campaigns that generate measurable results.",
-      "description": "SEO, paid media, content strategy, and analytics — we design marketing systems that attract, convert, and retain your ideal customers."
-    },
-    "it_consulting": {
-      "title": "IT Consulting",
-      "summary": "Strategic technology guidance for growing businesses.",
-      "description": "From tech stack selection to digital transformation roadmaps, we provide clear, actionable advice that aligns technology with your business strategy."
-    }
+    "page_title": "Services & Pricing",
+    "page_subtitle": "Fixed-price packages built to European enterprise standards. WCAG 2.1 AA & EN 301 549 compliance included."
   },
   "about": {
     "title": "About EMXTECH",
     "subtitle": "A remote-first digital services firm built for the Baltic ecosystem.",
     "mission_label": "Our Mission",
     "vision_label": "Our Vision",
-    "mission": "Empower Baltic SMEs with fast, affordable, and measurable digital solutions — delivered by a distributed expert team with the precision of a boutique agency and the agility of a startup.",
+    "mission": "Empower Baltic SMEs with fixed-price, enterprise-grade digital solutions — delivered by a distributed expert team with the precision of a boutique agency and the agility of a startup.",
     "vision": "Become the most trusted remote-first digital services firm serving the Baltic and e-Residency ecosystem by 2029, recognized for technical depth, financial rigor, and operational excellence."
   },
   "contact": {

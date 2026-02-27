@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function Footer() {
@@ -13,9 +14,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <p className="text-xl font-bold tracking-tight text-white">
-              EMX<span className="teal-glow">TECH</span>
-            </p>
+            <div className="inline-block rounded-md bg-white px-2.5 py-1.5">
+              <Image
+                src="/logo.png"
+                alt="EMXTECH"
+                height={28}
+                width={89}
+              />
+            </div>
             <p className="mt-3 text-sm text-white/55">{t("tagline")}</p>
           </div>
 
@@ -49,7 +55,7 @@ export default function Footer() {
               {t("services_title")}
             </p>
             <ul className="mt-3 space-y-2">
-              {["Web Development", "Digital Marketing", "IT Consulting"].map((service) => (
+              {["Website & Web Dev", "Accessibility & EAA", "Business Services"].map((service) => (
                 <li key={service}>
                   <Link
                     href={`/${locale}/services`}

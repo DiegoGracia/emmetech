@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 
+const EAA_BADGES = ["WCAG 2.1 AA", "EN 301 549"] as const;
+
 export default function Hero() {
   const t = useTranslations("home.hero");
   const locale = useLocale();
@@ -27,7 +29,21 @@ export default function Hero() {
           <p className="mt-6 text-lg text-white/70 sm:text-xl max-w-2xl">
             {t("subtitle")}
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          {/* EAA compliance chips */}
+          <div className="mt-5 flex flex-wrap gap-2">
+            {EAA_BADGES.map((label) => (
+              <span
+                key={label}
+                className="inline-flex items-center gap-1.5 rounded-full border border-teal-glow/25 bg-teal-glow/[0.07] px-3 py-1 text-xs font-medium teal-glow/75"
+              >
+                ✓ {label}
+              </span>
+            ))}
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/55">
+              Fixed Price
+            </span>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href={`/${locale}/contact`}
               className="btn-teal-glow rounded-lg px-7 py-3 text-base font-semibold"

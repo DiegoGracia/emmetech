@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -25,10 +26,16 @@ export default function Header() {
     <header className="sticky top-0 z-50 glass-header">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tight text-white">
-            EMX<span className="teal-glow">TECH</span>
-          </span>
+        <Link href={`/${locale}`} className="flex items-center">
+          <div className="rounded-md bg-white px-2.5 py-1.5">
+            <Image
+              src="/logo.png"
+              alt="EMXTECH"
+              height={34}
+              width={108}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop nav */}

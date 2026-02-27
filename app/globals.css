@@ -11,9 +11,9 @@
     --color-teal: #2D7A84;
     --color-teal-light: #3A97A3;
     --color-teal-dark: #1F5960;
-    /* Space theme */
+    /* Futuristic accent */
     --color-space-void: #04060F;
-    --color-teal-glow: #3DE8FA;
+    --color-teal-glow: #60A5FA;
 
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
@@ -98,8 +98,8 @@
    ===================================================== */
 
 @keyframes teal-glow-pulse {
-    0%, 100% { box-shadow: 0 0 8px 2px rgba(45, 122, 132, 0.35); }
-    50%       { box-shadow: 0 0 22px 6px rgba(61, 232, 250, 0.60); }
+    0%, 100% { box-shadow: 0 0 8px 2px rgba(27, 43, 94, 0.45); }
+    50%       { box-shadow: 0 0 22px 6px rgba(75, 124, 243, 0.55); }
 }
 
 /* =====================================================
@@ -146,13 +146,13 @@
 
     /* --- Teal glow accents --- */
     .teal-glow {
-        color: #3DE8FA;
-        text-shadow: 0 0 14px rgba(61, 232, 250, 0.65);
+        color: #60A5FA;
+        text-shadow: 0 0 14px rgba(96, 165, 250, 0.60);
     }
 
     .teal-glow-border {
-        border-color: rgba(45, 122, 132, 0.5) !important;
-        box-shadow: 0 0 10px rgba(45, 122, 132, 0.28);
+        border-color: rgba(75, 124, 243, 0.5) !important;
+        box-shadow: 0 0 10px rgba(75, 124, 243, 0.28);
         animation: teal-glow-pulse 3s ease-in-out infinite;
     }
 
@@ -161,15 +161,15 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, #2D7A84 0%, #1F5960 100%);
-        box-shadow: 0 0 18px 2px rgba(45, 122, 132, 0.40);
+        background: linear-gradient(135deg, #1B2B5E 0%, #0F1D45 100%);
+        box-shadow: 0 0 18px 2px rgba(75, 124, 243, 0.35);
+        border: 1px solid rgba(75, 124, 243, 0.22);
         color: white !important;
-        border: none;
         transition: box-shadow 0.25s ease, transform 0.25s ease;
     }
 
     .btn-teal-glow:hover {
-        box-shadow: 0 0 32px 8px rgba(61, 232, 250, 0.50);
+        box-shadow: 0 0 32px 8px rgba(75, 124, 243, 0.55);
         transform: translateY(-2px);
     }
 
@@ -215,8 +215,8 @@
     }
 
     .input-space:focus {
-        border-color: rgba(45, 122, 132, 0.70);
-        box-shadow: 0 0 0 2px rgba(45, 122, 132, 0.22);
+        border-color: rgba(75, 124, 243, 0.70);
+        box-shadow: 0 0 0 2px rgba(75, 124, 243, 0.22);
     }
 }
 

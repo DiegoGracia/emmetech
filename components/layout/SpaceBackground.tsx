@@ -12,7 +12,7 @@ export default function SpaceBackground() {
         zIndex: 0,
         backgroundColor: "#04060F",
         backgroundImage:
-          "radial-gradient(circle, rgba(61,232,250,0.045) 1px, transparent 1px)",
+          "radial-gradient(circle, rgba(75,124,243,0.040) 1px, transparent 1px)",
         backgroundSize: "44px 44px",
         pointerEvents: "none",
       }}

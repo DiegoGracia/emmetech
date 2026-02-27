@@ -20,13 +20,13 @@ interface Pulse {
   color: string;
 }
 
-// Palette: teal-cyan + purple-magenta, matches brand teal
+// Palette: corporate navy-blue + silver — institutional, B2B consultancy feel
 const PALETTE = [
-  { fill: "#3DE8FA", glow: "#3DE8FA" }, // teal
-  { fill: "#3DE8FA", glow: "#3DE8FA" }, // teal (weighted higher)
-  { fill: "#3DE8FA", glow: "#3DE8FA" }, // teal
-  { fill: "#C084FC", glow: "#D946EF" }, // purple
-  { fill: "#818CF8", glow: "#6366F1" }, // indigo (bridge)
+  { fill: "#4B7CF3", glow: "#4B7CF3" }, // corporate blue
+  { fill: "#4B7CF3", glow: "#60A5FA" }, // corporate blue (weighted higher)
+  { fill: "#4B7CF3", glow: "#4B7CF3" }, // corporate blue
+  { fill: "#93C5FD", glow: "#BFDBFE" }, // light silver-blue
+  { fill: "#94A3B8", glow: "#CBD5E1" }, // slate / silver
 ];
 
 export default function NeuralNetwork() {
@@ -79,7 +79,7 @@ export default function NeuralNetwork() {
         const dy = b.y - a.y;
         if (Math.sqrt(dx * dx + dy * dy) < MAX_DIST) {
           // Pulse color inherits from the source node occasionally
-          const useColor = Math.random() > 0.4 ? a.color : "#C084FC";
+          const useColor = Math.random() > 0.4 ? a.color : "#60A5FA";
           pulses.push({ from: a, to: b, progress: 0, speed: 0.006 + Math.random() * 0.009, color: useColor });
           return;
         }
@@ -112,7 +112,7 @@ export default function NeuralNetwork() {
             const alpha = (1 - dist / MAX_DIST) * 0.22;
             // Blend color: mostly teal, hint of node color
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(61, 232, 250, ${alpha})`;
+            ctx.strokeStyle = `rgba(75, 124, 243, ${alpha})`;
             ctx.lineWidth = 0.6;
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);

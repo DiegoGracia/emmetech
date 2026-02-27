@@ -9,14 +9,14 @@
   "home": {
     "hero": {
       "tagline": "Expertos Digitales Bálticos",
-      "title": "Soluciones Digitales Rápidas, Asequibles y Medibles",
-      "subtitle": "EMXTECH impulsa a las pymes del Báltico con servicios digitales de precisión — con la calidad de una agencia boutique y la agilidad de una startup.",
+      "title": "Soluciones Digitales de Nivel Empresarial. Precio Fijo.",
+      "subtitle": "EMXTECH entrega soluciones digitales de cumplimiento EAA a las pymes del Báltico — precio fijo transparente, certificación WCAG 2.1 AA y EN 301 549, sin sorpresas.",
       "cta_primary": "Iniciar un Proyecto",
-      "cta_secondary": "Ver Servicios"
+      "cta_secondary": "Ver Precios"
     },
     "services_section": {
-      "title": "Lo Que Hacemos",
-      "subtitle": "Tres capacidades clave, un equipo integrado."
+      "title": "Precios Simples y Transparentes",
+      "subtitle": "Tres paquetes de precio fijo bajo estándares empresariales europeos."
     },
     "cta_strip": {
       "title": "¿Listo para construir algo grande?",
@@ -25,28 +25,15 @@
     }
   },
   "services": {
-    "web_dev": {
-      "title": "Desarrollo Web",
-      "summary": "Sitios web y aplicaciones personalizadas con alto rendimiento.",
-      "description": "Desde sitios de marketing hasta aplicaciones web completas, construimos productos digitales rápidos, accesibles y escalables adaptados a tus objetivos de negocio."
-    },
-    "digital_marketing": {
-      "title": "Marketing Digital",
-      "summary": "Campañas basadas en datos que generan resultados medibles.",
-      "description": "SEO, medios de pago, estrategia de contenidos y analítica — diseñamos sistemas de marketing que atraen, convierten y fidelizan a tus clientes ideales."
-    },
-    "it_consulting": {
-      "title": "Consultoría TI",
-      "summary": "Orientación tecnológica estratégica para empresas en crecimiento.",
-      "description": "Desde la selección de tecnología hasta hojas de ruta de transformación digital, brindamos asesoramiento claro y accionable que alinea la tecnología con tu estrategia de negocio."
-    }
+    "page_title": "Servicios y Precios",
+    "page_subtitle": "Paquetes de precio fijo bajo estándares empresariales europeos. Cumplimiento WCAG 2.1 AA y EN 301 549 incluido."
   },
   "about": {
     "title": "Sobre EMXTECH",
     "subtitle": "Una empresa de servicios digitales en remoto construida para el ecosistema báltico.",
     "mission_label": "Nuestra Misión",
     "vision_label": "Nuestra Visión",
-    "mission": "Empoderar a las pymes bálticas con soluciones digitales rápidas, asequibles y medibles — entregadas por un equipo experto distribuido con la precisión de una agencia boutique y la agilidad de una startup.",
+    "mission": "Empoderar a las pymes bálticas con soluciones digitales de precio fijo y nivel empresarial — entregadas por un equipo experto distribuido con la precisión de una agencia boutique y la agilidad de una startup.",
     "vision": "Convertirnos en la empresa de servicios digitales en remoto más confiable del ecosistema báltico y de e-Residencia para 2029, reconocida por su profundidad técnica, rigor financiero y excelencia operativa."
   },
   "contact": {
