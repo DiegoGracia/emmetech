@@ -41,6 +41,10 @@ export default function ContactForm() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5">
+          {/* Honeypot: hidden from humans, bots fill it in */}
+          <div style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none" }} aria-hidden="true" tabIndex={-1}>
+            <input name="website" type="text" autoComplete="off" tabIndex={-1} />
+          </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div>
               <label className="mb-1 block text-sm font-medium text-white/70">

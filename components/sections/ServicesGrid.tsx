@@ -4,8 +4,6 @@ import { useTranslations, useLocale } from "next-intl";
 interface PackageTier {
   name: string;
   nameEs: string;
-  price: string;
-  vatPrice: string;
   delivery: string;
   deliveryEs: string;
   eaa: string;
@@ -20,8 +18,6 @@ const packages: PackageTier[] = [
   {
     name: "Starter",
     nameEs: "Starter",
-    price: "€2,200",
-    vatPrice: "€2,728 incl. VAT",
     delivery: "10–14 days",
     deliveryEs: "10–14 días",
     eaa: "WCAG 2.1 AA",
@@ -42,8 +38,6 @@ const packages: PackageTier[] = [
   {
     name: "Professional",
     nameEs: "Professional",
-    price: "€4,500",
-    vatPrice: "€5,580 incl. VAT",
     delivery: "18–21 days",
     deliveryEs: "18–21 días",
     eaa: "WCAG AA + EN 301 549",
@@ -66,8 +60,6 @@ const packages: PackageTier[] = [
   {
     name: "Enterprise",
     nameEs: "Enterprise",
-    price: "€7,500+",
-    vatPrice: "€9,300+ incl. VAT",
     delivery: "4–6 weeks",
     deliveryEs: "4–6 semanas",
     eaa: "Full EN 301 549 + VPAT",
@@ -107,7 +99,7 @@ export default function ServicesGrid() {
               className={`glass rounded-xl p-6 flex flex-col relative transition-all ${
                 pkg.highlight
                   ? "border border-teal-glow/30 shadow-[0_0_24px_rgba(75,124,243,0.12)]"
-                  : "border-white/10 hover:teal-glow-border"
+                  : "border-white/10 hover:border-teal-glow/30 hover:shadow-[0_0_24px_rgba(75,124,243,0.12)] transition-all"
               }`}
             >
               {pkg.tag && (
@@ -119,8 +111,6 @@ export default function ServicesGrid() {
               <p className="text-xs font-semibold uppercase tracking-widest text-white/50">
                 {isEs ? pkg.nameEs : pkg.name}
               </p>
-              <p className="mt-1 text-3xl font-bold text-white">{pkg.price}</p>
-              <p className="text-xs text-white/35 mt-0.5">{pkg.vatPrice}</p>
 
               <div className="mt-3 flex flex-wrap gap-3 text-xs">
                 <span className="text-white/40">⏱ {isEs ? pkg.deliveryEs : pkg.delivery}</span>

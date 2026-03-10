@@ -7,8 +7,6 @@ import CTAStrip from "@/components/sections/CTAStrip";
 interface PackageTier {
   name: string;
   nameEs: string;
-  price: string;
-  vatPrice: string;
   delivery: string;
   deliveryEs: string;
   eaa: string;
@@ -22,7 +20,6 @@ interface PackageTier {
 interface CatalogueItem {
   name: string;
   nameEs: string;
-  price: string;
   delivery: string;
   deliveryEs: string;
   eaa: string;
@@ -40,8 +37,6 @@ const packages: PackageTier[] = [
   {
     name: "Starter",
     nameEs: "Starter",
-    price: "€2,200",
-    vatPrice: "€2,728 incl. 24% VAT",
     delivery: "10–14 days",
     deliveryEs: "10–14 días",
     eaa: "WCAG 2.1 AA",
@@ -62,8 +57,6 @@ const packages: PackageTier[] = [
   {
     name: "Professional",
     nameEs: "Professional",
-    price: "€4,500",
-    vatPrice: "€5,580 incl. 24% VAT",
     delivery: "18–21 days",
     deliveryEs: "18–21 días",
     eaa: "WCAG AA + EN 301 549",
@@ -86,8 +79,6 @@ const packages: PackageTier[] = [
   {
     name: "Enterprise",
     nameEs: "Enterprise",
-    price: "€7,500+",
-    vatPrice: "€9,300+ incl. 24% VAT",
     delivery: "4–6 weeks",
     deliveryEs: "4–6 semanas",
     eaa: "Full EN 301 549 + VPAT",
@@ -117,7 +108,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Starter Website (5 pages)",
         nameEs: "Sitio Web Starter (5 páginas)",
-        price: "€2,200",
         delivery: "10–14 days",
         deliveryEs: "10–14 días",
         eaa: "WCAG AA",
@@ -125,7 +115,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Professional Website (12 pages)",
         nameEs: "Sitio Web Profesional (12 páginas)",
-        price: "€4,500",
         delivery: "18–21 days",
         deliveryEs: "18–21 días",
         eaa: "WCAG AA + EN 301 549",
@@ -133,7 +122,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Enterprise Website / Web App",
         nameEs: "Sitio Empresarial / App Web",
-        price: "€7,500–10,000",
         delivery: "4–6 weeks",
         deliveryEs: "4–6 semanas",
         eaa: "Full EN 301 549 + VPAT",
@@ -141,7 +129,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Campaign Landing Page",
         nameEs: "Landing Page de Campaña",
-        price: "€900",
         delivery: "5–7 days",
         deliveryEs: "5–7 días",
         eaa: "WCAG AA",
@@ -149,7 +136,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Design System",
         nameEs: "Sistema de Diseño",
-        price: "€5,000–8,000",
         delivery: "4–6 weeks",
         deliveryEs: "4–6 semanas",
         eaa: "WCAG AA",
@@ -157,7 +143,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "SaaS Web Application",
         nameEs: "Aplicación Web SaaS",
-        price: "€6,000–15,000",
         delivery: "6–12 weeks",
         deliveryEs: "6–12 semanas",
         eaa: "Full EN 301 549",
@@ -171,7 +156,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "WCAG 2.1 AA / EN 301 549 Audit",
         nameEs: "Auditoría WCAG 2.1 AA / EN 301 549",
-        price: "€1,500–3,000",
         delivery: "1–2 weeks",
         deliveryEs: "1–2 semanas",
         eaa: "Core service",
@@ -179,7 +163,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Accessibility Remediation",
         nameEs: "Remediación de Accesibilidad",
-        price: "€2,500–8,000",
         delivery: "2–4 weeks",
         deliveryEs: "2–4 semanas",
         eaa: "Core service",
@@ -187,7 +170,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Accessibility Monitoring Retainer",
         nameEs: "Monitoreo de Accesibilidad (Retainer)",
-        price: "€350–600/mo",
         delivery: "Ongoing",
         deliveryEs: "Continuo",
         eaa: "Core service",
@@ -201,7 +183,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Performance Optimization (Core Web Vitals)",
         nameEs: "Optimización de Rendimiento (Core Web Vitals)",
-        price: "€1,200–2,500",
         delivery: "1–2 weeks",
         deliveryEs: "1–2 semanas",
         eaa: "Included",
@@ -209,7 +190,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Technical SEO Package",
         nameEs: "Paquete SEO Técnico",
-        price: "€800/mo or €2,200",
         delivery: "Ongoing",
         deliveryEs: "Continuo",
         eaa: "Included",
@@ -217,7 +197,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Digital Marketing Strategy",
         nameEs: "Estrategia de Marketing Digital",
-        price: "€1,500–3,000",
         delivery: "1–2 weeks",
         deliveryEs: "1–2 semanas",
         eaa: "—",
@@ -231,7 +210,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Virtual CFO Retainer",
         nameEs: "Retainer CFO Virtual",
-        price: "€1,200–2,000/mo",
         delivery: "Ongoing",
         deliveryEs: "Continuo",
         eaa: "—",
@@ -239,7 +217,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Business Plan + Financial Model",
         nameEs: "Plan de Negocio + Modelo Financiero",
-        price: "€2,500–5,000",
         delivery: "2–3 weeks",
         deliveryEs: "2–3 semanas",
         eaa: "—",
@@ -247,7 +224,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "ERP Implementation (QuickBooks / Odoo)",
         nameEs: "Implementación ERP (QuickBooks / Odoo)",
-        price: "€2,500–5,000",
         delivery: "2–4 weeks",
         deliveryEs: "2–4 semanas",
         eaa: "—",
@@ -261,7 +237,6 @@ const catalogue: CatalogueCategory[] = [
       {
         name: "Monthly Maintenance (4 hrs/month)",
         nameEs: "Mantenimiento Mensual (4 hrs/mes)",
-        price: "€250–450/mo",
         delivery: "Ongoing",
         deliveryEs: "Continuo",
         eaa: "WCAG AA",
@@ -283,12 +258,12 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold sm:text-5xl">
-              {isEs ? "Servicios y Precios" : "Services & Pricing"}
+              {isEs ? "Nuestros Servicios" : "Our Services"}
             </h1>
             <p className="mt-4 text-xl text-white/60 max-w-2xl">
               {isEs
-                ? "Paquetes de precio fijo bajo estándares empresariales europeos."
-                : "Fixed-price packages built to European enterprise standards."}
+                ? "Soluciones digitales de nivel empresarial, con cumplimiento EAA y bajo estándares europeos."
+                : "Enterprise-grade digital solutions, EAA-compliant and built to European standards."}
             </p>
             {/* EAA compliance badges */}
             <div className="mt-5 flex flex-wrap gap-3">
@@ -315,10 +290,10 @@ export default function ServicesPage() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`glass rounded-2xl p-7 flex flex-col relative ${
+                className={`glass rounded-2xl p-7 flex flex-col relative transition-all ${
                   pkg.highlight
                     ? "border border-teal-glow/30 shadow-[0_0_32px_rgba(75,124,243,0.14)]"
-                    : "border-white/10"
+                    : "border-white/10 hover:border-teal-glow/30 hover:shadow-[0_0_32px_rgba(75,124,243,0.14)]"
                 }`}
               >
                 {pkg.tag && (
@@ -329,8 +304,6 @@ export default function ServicesPage() {
                 <p className="text-xs font-semibold uppercase tracking-widest text-white/45">
                   {isEs ? pkg.nameEs : pkg.name}
                 </p>
-                <p className="mt-1.5 text-4xl font-bold text-white">{pkg.price}</p>
-                <p className="text-xs text-white/35 mt-0.5">{pkg.vatPrice}</p>
                 <div className="mt-3 flex flex-wrap gap-4 text-xs">
                   <span className="text-white/45">⏱ {isEs ? pkg.deliveryEs : pkg.delivery}</span>
                   <span className="teal-glow font-medium">✓ {pkg.eaa}</span>
@@ -378,13 +351,11 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="text-left sm:text-right flex-shrink-0">
-              <p className="text-4xl font-bold text-white">€3,500</p>
-              <p className="text-xs text-white/35 mt-0.5">{isEs ? "IVA no incluido" : "ex-VAT"}</p>
               <Link
                 href={`/${locale}/contact`}
-                className="mt-5 btn-teal-glow inline-block rounded-lg px-7 py-2.5 text-sm font-semibold"
+                className="btn-teal-glow inline-block rounded-lg px-7 py-2.5 text-sm font-semibold"
               >
-                {isEs ? "Más Información" : "Learn More"}
+                {isEs ? "Solicitar Presupuesto" : "Get a Quote"}
               </Link>
             </div>
           </div>
@@ -407,18 +378,15 @@ export default function ServicesPage() {
                   {cat.items.map((item) => (
                     <div
                       key={item.name}
-                      className="glass rounded-xl p-5 flex flex-col gap-4 border-white/[0.06] hover:teal-glow-border transition-all"
+                      className="glass rounded-xl p-5 flex flex-col gap-3 border-white/[0.06] hover:border-teal-glow/30 hover:shadow-[0_0_24px_rgba(75,124,243,0.12)] transition-all"
                     >
                       <p className="font-medium text-white text-sm leading-snug">
                         {isEs ? item.nameEs : item.name}
                       </p>
                       <div className="mt-auto flex items-end justify-between gap-2">
-                        <div>
-                          <p className="text-lg font-bold text-white">{item.price}</p>
-                          <p className="text-xs text-white/40">
-                            {isEs ? item.deliveryEs : item.delivery}
-                          </p>
-                        </div>
+                        <p className="text-xs text-white/40">
+                          ⏱ {isEs ? item.deliveryEs : item.delivery}
+                        </p>
                         {item.eaa !== "—" && (
                           <span className="text-xs teal-glow/65 font-medium text-right leading-tight">
                             ✓ {item.eaa}

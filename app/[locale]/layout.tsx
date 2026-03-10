@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "EMXTECH — Baltic Digital Experts",
   description:
     "Fast, affordable, and measurable digital solutions for Baltic SMEs. Web development, digital marketing, and IT consulting.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 type Props = {

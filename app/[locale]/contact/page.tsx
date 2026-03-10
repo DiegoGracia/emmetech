@@ -15,19 +15,6 @@ export default function ContactPage() {
             <p className="mt-4 text-lg text-white/65">{t("subtitle")}</p>
 
             <div className="mt-10 space-y-6">
-              {/* Book a meeting */}
-              <div className="glass rounded-xl p-6">
-                <p className="font-semibold text-white">{t("or_book")}</p>
-                <a
-                  href="https://cal.com/emme-technologies"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-teal-glow mt-3 inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold"
-                >
-                  📅 {t("book_cta")}
-                </a>
-              </div>
-
               {/* WhatsApp */}
               <div className="glass rounded-xl p-6">
                 <a

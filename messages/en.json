@@ -12,21 +12,21 @@
       "title": "Enterprise-Grade Digital Solutions. Fixed Price.",
       "subtitle": "EMXTECH delivers EAA-compliant digital solutions to Baltic SMEs — transparent fixed pricing, WCAG 2.1 AA & EN 301 549 certified, zero surprises.",
       "cta_primary": "Start a Project",
-      "cta_secondary": "See Pricing"
+      "cta_secondary": "See Services"
     },
     "services_section": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Three fixed-price packages built to European enterprise standards."
+      "title": "Our Services",
+      "subtitle": "Enterprise-grade digital solutions for Baltic SMEs."
     },
     "cta_strip": {
       "title": "Ready to build something great?",
       "subtitle": "Let's talk about your project. No commitments, no hard sell.",
-      "cta": "Book a Free Call"
+      "cta": "Get a Quote"
     }
   },
   "services": {
-    "page_title": "Services & Pricing",
-    "page_subtitle": "Fixed-price packages built to European enterprise standards. WCAG 2.1 AA & EN 301 549 compliance included."
+    "page_title": "Services",
+    "page_subtitle": "Enterprise-grade digital solutions, EAA-compliant and built to European standards."
   },
   "about": {
     "title": "About EMXTECH",
@@ -49,8 +49,6 @@
       "success": "Message sent! We'll be in touch soon.",
       "error": "Something went wrong. Please try again."
     },
-    "or_book": "Or book a call directly",
-    "book_cta": "Schedule a Meeting",
     "whatsapp_cta": "Chat on WhatsApp"
   },
   "footer": {

@@ -12,21 +12,21 @@
       "title": "Soluciones Digitales de Nivel Empresarial. Precio Fijo.",
       "subtitle": "EMXTECH entrega soluciones digitales de cumplimiento EAA a las pymes del Báltico — precio fijo transparente, certificación WCAG 2.1 AA y EN 301 549, sin sorpresas.",
       "cta_primary": "Iniciar un Proyecto",
-      "cta_secondary": "Ver Precios"
+      "cta_secondary": "Ver Servicios"
     },
     "services_section": {
-      "title": "Precios Simples y Transparentes",
-      "subtitle": "Tres paquetes de precio fijo bajo estándares empresariales europeos."
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones digitales de nivel empresarial para pymes bálticas."
     },
     "cta_strip": {
       "title": "¿Listo para construir algo grande?",
       "subtitle": "Hablemos de tu proyecto. Sin compromisos, sin presión.",
-      "cta": "Reserva una Llamada Gratuita"
+      "cta": "Solicitar Presupuesto"
     }
   },
   "services": {
-    "page_title": "Servicios y Precios",
-    "page_subtitle": "Paquetes de precio fijo bajo estándares empresariales europeos. Cumplimiento WCAG 2.1 AA y EN 301 549 incluido."
+    "page_title": "Servicios",
+    "page_subtitle": "Soluciones digitales de nivel empresarial, con cumplimiento EAA y bajo estándares europeos."
   },
   "about": {
     "title": "Sobre EMXTECH",
@@ -49,8 +49,6 @@
       "success": "¡Mensaje enviado! Nos pondremos en contacto pronto.",
       "error": "Algo salió mal. Por favor intenta de nuevo."
     },
-    "or_book": "O agenda una llamada directamente",
-    "book_cta": "Programar una Reunión",
     "whatsapp_cta": "Chatear por WhatsApp"
   },
   "footer": {

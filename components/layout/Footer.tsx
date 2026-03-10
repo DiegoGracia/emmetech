@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <div className="inline-block rounded-md bg-white px-2.5 py-1.5">
+            <div className="inline-block px-2.5 py-1.5">
               <Image
                 src="/logo.png"
                 alt="EMXTECH"
