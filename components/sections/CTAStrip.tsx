@@ -26,7 +26,7 @@ export default function CTAStrip() {
             {t("cta")}
           </Link>
           <a
-            href="https://wa.me/placeholder"
+            href="https://wa.me/37251922133"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost-glass rounded-lg px-8 py-3 text-base font-semibold"

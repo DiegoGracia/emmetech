@@ -18,7 +18,7 @@ export default function ContactPage() {
               {/* WhatsApp */}
               <div className="glass rounded-xl p-6">
                 <a
-                  href="https://wa.me/placeholder"
+                  href="https://wa.me/37251922133"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90 transition-opacity"
