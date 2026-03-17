@@ -2,14 +2,57 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { MagnetizeButton } from "@/components/ui/magnetize-button";
 
+const LOCALES = [
+  { code: "es", label: "ES" },
+  { code: "en", label: "EN" },
+];
+
+function LocaleSwitcher({ locale, pathname }: { locale: string; pathname: string }) {
+  // Swap the locale prefix in the current pathname
+  const getLocalePath = (targetLocale: string) => {
+    const segments = pathname.split("/").filter(Boolean);
+    const knownLocales = LOCALES.map((l) => l.code);
+    if (knownLocales.includes(segments[0])) {
+      segments[0] = targetLocale;
+    } else {
+      segments.unshift(targetLocale);
+    }
+    return "/" + segments.join("/") || `/${targetLocale}`;
+  };
+
+  return (
+    <div className="flex items-center gap-1">
+      {LOCALES.map((l, i) => (
+        <span key={l.code} className="flex items-center gap-1">
+          {i > 0 && (
+            <span style={{ color: "rgba(255,255,255,0.20)", fontSize: "10px" }}>|</span>
+          )}
+          <Link
+            href={getLocalePath(l.code)}
+            className="text-xs font-semibold tracking-widest transition-colors duration-150"
+            style={{
+              color: locale === l.code ? "#0EA5E9" : "rgba(255,255,255,0.35)",
+              fontFamily: "var(--font-inter), sans-serif",
+              letterSpacing: "0.1em",
+            }}
+          >
+            {l.label}
+          </Link>
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export default function Header() {
   const locale = useLocale();
   const pathname = usePathname();
+  const t = useTranslations("nav");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,9 +63,9 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: `/${locale}`,                          label: "Inicio" },
-    { href: `/${locale}/soluciones-tecnologicas`,  label: "Tecnología" },
-    { href: `/${locale}/soluciones-financieras`,   label: "Finanzas" },
+    { href: `/${locale}`,                          label: t("home") },
+    { href: `/${locale}/soluciones-tecnologicas`,  label: t("tech") },
+    { href: `/${locale}/soluciones-financieras`,   label: t("finance") },
   ];
 
   const isActive = (href: string) =>
@@ -74,6 +117,7 @@ export default function Header() {
 
         {/* Desktop right */}
         <div className="hidden items-center gap-5 md:flex">
+          <LocaleSwitcher locale={locale} pathname={pathname} />
           <Link
             href={`/${locale}/contacto`}
             className="text-sm transition-colors"
@@ -83,10 +127,10 @@ export default function Header() {
               color: isActive(`/${locale}/contacto`) ? "#0EA5E9" : "rgba(255,255,255,0.50)",
             }}
           >
-            Contacto
+            {t("contact")}
           </Link>
           <MagnetizeButton href={`/${locale}/contacto`} variant="primary" className="px-5 py-2.5 text-sm rounded-xl">
-            Agendar Diagnóstico
+            {t("cta")}
           </MagnetizeButton>
         </div>
 
@@ -130,12 +174,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="flex items-center justify-center pt-2 pb-1">
+              <LocaleSwitcher locale={locale} pathname={pathname} />
+            </div>
             <Link
               href={`/${locale}/contacto`}
-              className="btn-gold-primary rounded-xl px-5 py-3 text-sm text-center mt-4"
+              className="btn-gold-primary rounded-xl px-5 py-3 text-sm text-center mt-2"
               onClick={() => setMenuOpen(false)}
             >
-              Agendar Diagnóstico
+              {t("cta")}
             </Link>
           </nav>
         </div>

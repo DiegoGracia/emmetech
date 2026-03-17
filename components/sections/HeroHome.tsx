@@ -1,16 +1,10 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulseBeams } from "@/components/ui/pulse-beams";
 import { Sparkles } from "@/components/ui/sparkles";
 import { GooeyTextMorphing } from "@/components/ui/gooey-text-morphing";
 import { MagnetizeButton } from "@/components/ui/magnetize-button";
-
-const MORPHING_TEXTS = [
-  "Control financiero real.",
-  "Arquitectura digital a medida.",
-  "Escalabilidad sin caos.",
-];
 
 // Hexagonal SVG pattern — matches live site
 function HexPattern() {
@@ -39,6 +33,8 @@ function HexPattern() {
 
 export default function HeroHome() {
   const locale = useLocale();
+  const t = useTranslations("home.hero");
+  const morphingTexts = t.raw("morphing") as string[];
 
   return (
     <section
@@ -84,7 +80,7 @@ export default function HeroHome() {
             className="text-xs font-semibold tracking-widest uppercase"
             style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif" }}
           >
-            Estrategia · Tecnología · Finanzas
+            {t("badge")}
           </span>
         </div>
 
@@ -102,9 +98,9 @@ export default function HeroHome() {
             opacity: 0,
           }}
         >
-          Tu empresa necesita más que operaciones —{" "}
+          {t("title_part1")}{" "}
           <Sparkles count={6} color="#0EA5E9">
-            <span style={{ color: "#0EA5E9" }}>necesita sistemas.</span>
+            <span style={{ color: "#0EA5E9" }}>{t("title_spark")}</span>
           </Sparkles>
         </h1>
 
@@ -121,7 +117,7 @@ export default function HeroHome() {
               letterSpacing: "-0.01em",
             }}
           >
-            <GooeyTextMorphing texts={MORPHING_TEXTS} />
+            <GooeyTextMorphing texts={morphingTexts} />
           </p>
         </div>
 
@@ -138,9 +134,7 @@ export default function HeroHome() {
             opacity: 0,
           }}
         >
-          Combinamos dirección financiera de alto nivel con tecnología a medida
-          para que tu empresa opere con claridad, crezca con estructura y escale
-          sin depender del caos.
+          {t("body")}
         </p>
 
         {/* CTAs */}
@@ -153,14 +147,14 @@ export default function HeroHome() {
             variant="primary"
             className="px-7 py-3.5 text-base rounded-xl"
           >
-            Agendar Diagnóstico
+            {t("cta_primary")}
           </MagnetizeButton>
           <MagnetizeButton
             href={`/${locale}/soluciones-tecnologicas`}
             variant="ghost"
             className="px-7 py-3.5 text-base rounded-xl"
           >
-            Conocer los Servicios
+            {t("cta_secondary")}
           </MagnetizeButton>
         </div>
 

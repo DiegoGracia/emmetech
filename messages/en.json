@@ -1,60 +1,179 @@
 {
   "nav": {
     "home": "Home",
+    "tech": "Technology",
+    "finance": "Finance",
+    "contact": "Contact",
     "about": "About",
     "services": "Services",
-    "contact": "Contact",
-    "get_started": "Get Started"
+    "get_started": "Schedule Diagnosis",
+    "cta": "Schedule Diagnosis"
   },
   "home": {
     "hero": {
-      "tagline": "Baltic Digital Experts",
-      "title": "Enterprise-Grade Digital Solutions. Fixed Price.",
-      "subtitle": "EMXTECH delivers EAA-compliant digital solutions to Baltic SMEs — transparent fixed pricing, WCAG 2.1 AA & EN 301 549 certified, zero surprises.",
-      "cta_primary": "Start a Project",
-      "cta_secondary": "See Services"
+      "badge": "Strategy · Technology · Finance",
+      "tagline": "Strategy · Technology · Finance",
+      "title": "Your business needs more than operations — it needs systems.",
+      "title_part1": "Your business needs more than operations —",
+      "title_spark": "it needs systems.",
+      "morphing": [
+        "Real financial control.",
+        "Custom digital architecture.",
+        "Scalability without chaos."
+      ],
+      "body": "We combine senior financial leadership with purpose-built technology so your company operates with clarity, grows with structure, and scales without depending on chaos.",
+      "cta_primary": "Schedule a Diagnosis",
+      "cta_secondary": "Explore Services",
+      "subtitle": "We combine senior financial leadership with purpose-built technology so your company operates with clarity, grows with structure, and scales without depending on chaos."
     },
     "services_section": {
-      "title": "Our Services",
-      "subtitle": "Enterprise-grade digital solutions for Baltic SMEs."
+      "title": "Two Verticals. One Vision.",
+      "subtitle": "Strategic technology and finance for businesses that mean business."
     },
     "cta_strip": {
-      "title": "Ready to build something great?",
-      "subtitle": "Let's talk about your project. No commitments, no hard sell.",
-      "cta": "Get a Quote"
+      "title": "Ready to operate with structure?",
+      "subtitle": "Schedule a free diagnosis and discover exactly what your company needs.",
+      "cta": "Schedule Diagnosis"
+    },
+    "problem": {
+      "label": "The problem we solve",
+      "quote": "78% of businesses in LATAM make financial decisions without real-time visibility.",
+      "heading": "Most growing companies run on spreadsheets, gut decisions, and disconnected technology.",
+      "body1_pre": "It's not a talent problem. It's a",
+      "body1_strong": "structure",
+      "body1_post": " problem. Without real financial systems and technology connected to your business, scaling becomes a burden — not an achievement.",
+      "body2": "Companies that scale don't do it by working harder — they do it with better systems, greater visibility, and decisions based on real data."
+    },
+    "verticals": {
+      "tech_label": "Technology Solutions",
+      "tech_heading": "Digital systems that grow your business",
+      "tech_body": "We don't build pages — we build business tools. Web development, e-commerce, custom software, integrations and automation with strategic purpose.",
+      "tech_items": [
+        "Corporate Web Development",
+        "E-commerce & Sales Platforms",
+        "Custom Software",
+        "Integrations & APIs",
+        "Process Automation"
+      ],
+      "tech_link": "Explore Technology",
+      "finance_label": "Financial Solutions",
+      "finance_heading": "Total control of your numbers and your future",
+      "finance_body": "Fractional CFO, KPI dashboards, 5-year financial models and operational institutionalization. Your company with real visibility and direction.",
+      "finance_items": [
+        "Fractional CFO",
+        "Cash Flow Control",
+        "Financial KPI Dashboards",
+        "5-Year Financial Model",
+        "Operational Institutionalization"
+      ],
+      "finance_link": "Explore Finance"
+    },
+    "outcomes": {
+      "label": "What we build together",
+      "items": [
+        "We replace spreadsheet chaos with real-time clarity",
+        "We build systems that operate without you",
+        "We turn your website into a sales tool",
+        "We design the tech backbone to scale",
+        "We model your 5-year financial growth",
+        "We institutionalize what today depends on the founder"
+      ]
+    },
+    "trust": {
+      "label": "Track Record",
+      "stats": [
+        { "value": "+50", "unit": "companies",   "desc": "in Mexico and LATAM with implemented systems" },
+        { "value": "+10", "unit": "years",        "desc": "of combined experience in finance and technology" },
+        { "value": "CFO", "unit": "Fractional",   "desc": "with proven institutional methodology in high growth" }
+      ],
+      "credentials": [
+        "Projects delivered on time and within budget",
+        "Agile methodology with verifiable partial deliveries",
+        "Full confidentiality in every engagement",
+        "Team with experience in startups, SMEs and corporates"
+      ]
+    },
+    "mid_cta": {
+      "headline": "Ready to operate with structure?",
+      "sub": "Schedule a free diagnosis and discover exactly what your company needs.",
+      "primary": "Schedule Diagnosis",
+      "secondary": "Request a Quote"
+    },
+    "final_cta": {
+      "headline": "Your company already has the potential. We put the systems in place.",
+      "cta": "Talk to a Specialist"
     }
   },
-  "services": {
-    "page_title": "Services",
-    "page_subtitle": "Enterprise-grade digital solutions, EAA-compliant and built to European standards."
+  "tech": {
+    "hero": {
+      "badge": "Technology Solutions",
+      "headline": "We build the digital systems that make your company operate and grow",
+      "sub": "From web architecture to process automation — technology with business purpose.",
+      "cta_primary": "Request a Quote",
+      "cta_secondary": "Schedule Diagnosis"
+    }
   },
-  "about": {
-    "title": "About EMXTECH",
-    "subtitle": "A remote-first digital services firm built for the Baltic ecosystem.",
-    "mission_label": "Our Mission",
-    "vision_label": "Our Vision",
-    "mission": "Empower Baltic SMEs with fixed-price, enterprise-grade digital solutions — delivered by a distributed expert team with the precision of a boutique agency and the agility of a startup.",
-    "vision": "Become the most trusted remote-first digital services firm serving the Baltic and e-Residency ecosystem by 2029, recognized for technical depth, financial rigor, and operational excellence."
+  "finance": {
+    "hero": {
+      "badge": "Financial Solutions",
+      "headline": "Total control of your finances, processes and growth",
+      "sub": "Senior financial leadership + operating systems that replace chaos with real structure.",
+      "cta_primary": "Schedule Diagnosis",
+      "cta_secondary": "Request Consulting"
+    }
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Tell us about your project and we'll get back to you within 24 hours.",
+    "title": "Tell us about your business",
+    "subtitle": "We respond in less than 24 hours. Your information is completely confidential.",
+    "whatsapp_cta": "Chat on WhatsApp",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
       "company": "Company (optional)",
       "message": "How can we help?",
-      "submit": "Send Message",
+      "submit": "Request a Quote",
       "sending": "Sending...",
       "success": "Message sent! We'll be in touch soon.",
       "error": "Something went wrong. Please try again."
-    },
-    "whatsapp_cta": "Chat on WhatsApp"
+    }
+  },
+  "services": {
+    "page_title": "Services",
+    "page_subtitle": "Strategic technology and finance solutions for businesses in LATAM."
+  },
+  "about": {
+    "title": "About Emmetech",
+    "subtitle": "Technology and financial leadership for businesses that mean business.",
+    "mission_label": "Our Mission",
+    "vision_label": "Our Vision",
+    "mission": "Empower LATAM businesses with senior-level financial and technology systems — so they grow with structure, operate with clarity, and scale without depending on chaos.",
+    "vision": "Become the go-to strategic partner for growing businesses in Mexico and LATAM, recognized for our technical depth, financial rigor, and operational excellence."
   },
   "footer": {
-    "tagline": "Remote-first digital services for the Baltic ecosystem.",
-    "links_title": "Quick Links",
+    "tagline": "Technology and financial leadership for businesses that mean business.",
+    "links_title": "Navigation",
+    "tech_title": "Technology",
+    "finance_title": "Finance",
+    "contact_title": "Contact",
     "services_title": "Services",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "region": "Mexico & LATAM",
+    "tech_services": [
+      "Corporate Web Development",
+      "E-commerce & Platforms",
+      "Custom Software",
+      "Automation & APIs"
+    ],
+    "fin_services": [
+      "Fractional CFO",
+      "Cash Flow Control",
+      "KPI Dashboards",
+      "5-Year Financial Model"
+    ],
+    "contact_links": [
+      "Schedule Diagnosis",
+      "Request a Quote"
+    ],
+    "cta": "Talk to a Specialist"
   }
 }

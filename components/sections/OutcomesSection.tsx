@@ -1,13 +1,9 @@
-const OUTCOMES = [
-  "Reemplazamos el caos de hojas de cálculo por claridad en tiempo real",
-  "Construimos sistemas que operan sin ti",
-  "Convertimos tu web en una herramienta de ventas",
-  "Diseñamos el backbone tecnológico para escalar",
-  "Modelamos tu crecimiento financiero a 5 años",
-  "Institucionalizamos lo que hoy depende del fundador",
-];
+interface OutcomesContent {
+  label: string;
+  items: string[];
+}
 
-export default function OutcomesSection() {
+export default function OutcomesSection({ content }: { content: OutcomesContent }) {
   return (
     <section className="section-space py-24 sm:py-32" style={{ background: "#04060F" }}>
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -17,7 +13,7 @@ export default function OutcomesSection() {
             className="text-xs font-semibold uppercase tracking-widest shrink-0"
             style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif" }}
           >
-            Lo que construimos juntos
+            {content.label}
           </p>
           <div style={{ height: "1px", flex: 1, background: "rgba(255,255,255,0.06)", maxWidth: "60%" }} />
         </div>
@@ -26,7 +22,7 @@ export default function OutcomesSection() {
           className="mt-0 divide-y"
           style={{ borderColor: "rgba(255,255,255,0.06)" }}
         >
-          {OUTCOMES.map((outcome, i) => (
+          {content.items.map((outcome, i) => (
             <li
               key={i}
               className="group flex items-center gap-6 py-7"

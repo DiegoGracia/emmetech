@@ -1,22 +1,19 @@
 import Link from "next/link";
 
-const TECH_ITEMS = [
-  "Desarrollo Web Corporativo",
-  "E-commerce & Plataformas de Venta",
-  "Software a Medida",
-  "Integraciones & APIs",
-  "Automatización de Procesos",
-];
+interface VerticalsContent {
+  tech_label: string;
+  tech_heading: string;
+  tech_body: string;
+  tech_items: string[];
+  tech_link: string;
+  finance_label: string;
+  finance_heading: string;
+  finance_body: string;
+  finance_items: string[];
+  finance_link: string;
+}
 
-const FINANCE_ITEMS = [
-  "CFO Fraccional",
-  "Control de Flujo de Caja",
-  "Dashboards de KPIs Financieros",
-  "Modelo Financiero a 5 Años",
-  "Institucionalización Operativa",
-];
-
-export default function VerticalsSection({ locale }: { locale: string }) {
+export default function VerticalsSection({ locale, content }: { locale: string; content: VerticalsContent }) {
   return (
     <section className="section-space">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -57,7 +54,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
               className="text-xs font-semibold uppercase tracking-widest mb-6"
               style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif" }}
             >
-              Soluciones Tecnológicas
+              {content.tech_label}
             </p>
 
             <h2
@@ -71,7 +68,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
                 maxWidth: "380px",
               }}
             >
-              Sistemas digitales que hacen crecer tu negocio
+              {content.tech_heading}
             </h2>
 
             <p
@@ -85,13 +82,11 @@ export default function VerticalsSection({ locale }: { locale: string }) {
                 maxWidth: "400px",
               }}
             >
-              No construimos páginas — construimos herramientas de negocio.
-              Desarrollo web, e-commerce, software a medida, integraciones y
-              automatización con propósito estratégico.
+              {content.tech_body}
             </p>
 
             <ul className="mt-8 space-y-3">
-              {TECH_ITEMS.map((item) => (
+              {content.tech_items.map((item) => (
                 <li
                   key={item}
                   className="flex items-center gap-3 text-sm"
@@ -110,7 +105,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
               className="inline-flex items-center gap-2 text-sm font-semibold transition-colors group"
               style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif", letterSpacing: "0.01em" }}
             >
-              Explorar Tecnología
+              {content.tech_link}
               <span className="transition-transform group-hover:translate-x-1 inline-block">→</span>
             </Link>
           </div>
@@ -135,7 +130,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
               className="text-xs font-semibold uppercase tracking-widest mb-6"
               style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif" }}
             >
-              Soluciones Financieras
+              {content.finance_label}
             </p>
 
             <h2
@@ -149,7 +144,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
                 maxWidth: "380px",
               }}
             >
-              Control total de tus números y tu futuro
+              {content.finance_heading}
             </h2>
 
             <p
@@ -163,13 +158,11 @@ export default function VerticalsSection({ locale }: { locale: string }) {
                 maxWidth: "400px",
               }}
             >
-              CFO Fraccional, dashboards de KPIs, modelos financieros a 5 años
-              e institucionalización operativa. Tu empresa con visibilidad y
-              dirección real.
+              {content.finance_body}
             </p>
 
             <ul className="mt-8 space-y-3">
-              {FINANCE_ITEMS.map((item) => (
+              {content.finance_items.map((item) => (
                 <li
                   key={item}
                   className="flex items-center gap-3 text-sm"
@@ -188,7 +181,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
               className="inline-flex items-center gap-2 text-sm font-semibold transition-colors group"
               style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif", letterSpacing: "0.01em" }}
             >
-              Explorar Finanzas
+              {content.finance_link}
               <span className="transition-transform group-hover:translate-x-1 inline-block">→</span>
             </Link>
           </div>

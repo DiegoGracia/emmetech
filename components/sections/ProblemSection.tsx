@@ -1,4 +1,14 @@
-export default function ProblemSection() {
+interface ProblemContent {
+  label: string;
+  quote: string;
+  heading: string;
+  body1_pre: string;
+  body1_strong: string;
+  body1_post: string;
+  body2: string;
+}
+
+export default function ProblemSection({ content }: { content: ProblemContent }) {
   return (
     <section className="section-space py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -8,7 +18,7 @@ export default function ProblemSection() {
           className="text-xs font-semibold uppercase tracking-widest mb-12"
           style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif" }}
         >
-          El problema que resolvemos
+          {content.label}
         </p>
 
         {/* Asymmetric layout */}
@@ -28,8 +38,7 @@ export default function ProblemSection() {
                 paddingLeft: "1.5rem",
               }}
             >
-              "El 78% de las empresas en LATAM toman decisiones financieras sin
-              visibilidad en tiempo real."
+              &ldquo;{content.quote}&rdquo;
             </blockquote>
 
             <div
@@ -60,8 +69,7 @@ export default function ProblemSection() {
                 letterSpacing: "-0.025em",
               }}
             >
-              La mayoría de las empresas en crecimiento operan con hojas de
-              cálculo, decisiones sin datos y tecnología desconectada.
+              {content.heading}
             </h2>
 
             <div style={{ height: "2px", width: "40px", background: "#0EA5E9", marginTop: "0.75rem" }} />
@@ -76,10 +84,9 @@ export default function ProblemSection() {
                 fontWeight: 400,
               }}
             >
-              No es un problema de talento. Es un problema de{" "}
-              <strong style={{ color: "rgba(255,255,255,0.80)", fontWeight: 600 }}>estructura</strong>.
-              Sin sistemas financieros reales y tecnología conectada a tu negocio,
-              escalar se convierte en una carga — no en un logro.
+              {content.body1_pre}{" "}
+              <strong style={{ color: "rgba(255,255,255,0.80)", fontWeight: 600 }}>{content.body1_strong}</strong>
+              {content.body1_post}
             </p>
 
             <p
@@ -92,9 +99,7 @@ export default function ProblemSection() {
                 fontWeight: 400,
               }}
             >
-              Las empresas que escalan no lo hacen trabajando más duro — lo hacen
-              con mejores sistemas, mayor visibilidad y decisiones basadas en datos
-              reales.
+              {content.body2}
             </p>
           </div>
         </div>

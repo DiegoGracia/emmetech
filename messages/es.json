@@ -14,9 +14,17 @@
       "badge": "Estrategia · Tecnología · Finanzas",
       "tagline": "Estrategia · Tecnología · Finanzas",
       "title": "Tu empresa necesita más que operaciones — necesita sistemas.",
-      "subtitle": "Combinamos dirección financiera de alto nivel con tecnología a medida para que tu empresa opere con claridad, crezca con estructura y escale sin depender del caos.",
+      "title_part1": "Tu empresa necesita más que operaciones —",
+      "title_spark": "necesita sistemas.",
+      "morphing": [
+        "Control financiero real.",
+        "Arquitectura digital a medida.",
+        "Escalabilidad sin caos."
+      ],
+      "body": "Combinamos dirección financiera de alto nivel con tecnología a medida para que tu empresa opere con claridad, crezca con estructura y escale sin depender del caos.",
       "cta_primary": "Agendar Diagnóstico",
-      "cta_secondary": "Conocer los Servicios"
+      "cta_secondary": "Conocer los Servicios",
+      "subtitle": "Combinamos dirección financiera de alto nivel con tecnología a medida para que tu empresa opere con claridad, crezca con estructura y escale sin depender del caos."
     },
     "services_section": {
       "title": "Dos Verticales. Una Visión.",
@@ -26,6 +34,74 @@
       "title": "¿Listo para operar con estructura?",
       "subtitle": "Agenda un diagnóstico sin costo y descubre exactamente qué necesita tu empresa.",
       "cta": "Agendar Diagnóstico"
+    },
+    "problem": {
+      "label": "El problema que resolvemos",
+      "quote": "El 78% de las empresas en LATAM toman decisiones financieras sin visibilidad en tiempo real.",
+      "heading": "La mayoría de las empresas en crecimiento operan con hojas de cálculo, decisiones sin datos y tecnología desconectada.",
+      "body1_pre": "No es un problema de talento. Es un problema de",
+      "body1_strong": "estructura",
+      "body1_post": ". Sin sistemas financieros reales y tecnología conectada a tu negocio, escalar se convierte en una carga — no en un logro.",
+      "body2": "Las empresas que escalan no lo hacen trabajando más duro — lo hacen con mejores sistemas, mayor visibilidad y decisiones basadas en datos reales."
+    },
+    "verticals": {
+      "tech_label": "Soluciones Tecnológicas",
+      "tech_heading": "Sistemas digitales que hacen crecer tu negocio",
+      "tech_body": "No construimos páginas — construimos herramientas de negocio. Desarrollo web, e-commerce, software a medida, integraciones y automatización con propósito estratégico.",
+      "tech_items": [
+        "Desarrollo Web Corporativo",
+        "E-commerce & Plataformas de Venta",
+        "Software a Medida",
+        "Integraciones & APIs",
+        "Automatización de Procesos"
+      ],
+      "tech_link": "Explorar Tecnología",
+      "finance_label": "Soluciones Financieras",
+      "finance_heading": "Control total de tus números y tu futuro",
+      "finance_body": "CFO Fraccional, dashboards de KPIs, modelos financieros a 5 años e institucionalización operativa. Tu empresa con visibilidad y dirección real.",
+      "finance_items": [
+        "CFO Fraccional",
+        "Control de Flujo de Caja",
+        "Dashboards de KPIs Financieros",
+        "Modelo Financiero a 5 Años",
+        "Institucionalización Operativa"
+      ],
+      "finance_link": "Explorar Finanzas"
+    },
+    "outcomes": {
+      "label": "Lo que construimos juntos",
+      "items": [
+        "Reemplazamos el caos de hojas de cálculo por claridad en tiempo real",
+        "Construimos sistemas que operan sin ti",
+        "Convertimos tu web en una herramienta de ventas",
+        "Diseñamos el backbone tecnológico para escalar",
+        "Modelamos tu crecimiento financiero a 5 años",
+        "Institucionalizamos lo que hoy depende del fundador"
+      ]
+    },
+    "trust": {
+      "label": "Trayectoria",
+      "stats": [
+        { "value": "+50", "unit": "empresas",   "desc": "en México y LATAM con sistemas implementados" },
+        { "value": "+10", "unit": "años",        "desc": "de experiencia combinada en finanzas y tecnología" },
+        { "value": "CFO", "unit": "Fraccional",  "desc": "con metodología institucional probada en alto crecimiento" }
+      ],
+      "credentials": [
+        "Proyectos entregados a tiempo y dentro del presupuesto",
+        "Metodología ágil con entregas parciales verificables",
+        "Confidencialidad total en cada engagement",
+        "Equipo con experiencia en startups, PyMEs y corporativos"
+      ]
+    },
+    "mid_cta": {
+      "headline": "¿Listo para operar con estructura?",
+      "sub": "Agenda un diagnóstico sin costo y descubre exactamente qué necesita tu empresa.",
+      "primary": "Agendar Diagnóstico",
+      "secondary": "Solicitar Cotización"
+    },
+    "final_cta": {
+      "headline": "Tu empresa ya tiene el potencial. Nosotros ponemos los sistemas.",
+      "cta": "Hablar con un Especialista"
     }
   },
   "tech": {
@@ -76,7 +152,28 @@
   "footer": {
     "tagline": "Tecnología y dirección financiera para empresas que van en serio.",
     "links_title": "Navegación",
+    "tech_title": "Tecnología",
+    "finance_title": "Finanzas",
+    "contact_title": "Contacto",
     "services_title": "Servicios",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "region": "México & LATAM",
+    "tech_services": [
+      "Desarrollo Web Corporativo",
+      "E-commerce & Plataformas",
+      "Software a Medida",
+      "Automatización & APIs"
+    ],
+    "fin_services": [
+      "CFO Fraccional",
+      "Control de Flujo",
+      "Dashboards de KPIs",
+      "Modelo Financiero 5 Años"
+    ],
+    "contact_links": [
+      "Agendar Diagnóstico",
+      "Solicitar Cotización"
+    ],
+    "cta": "Hablar con un Especialista"
   }
 }

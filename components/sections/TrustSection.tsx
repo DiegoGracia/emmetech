@@ -1,17 +1,16 @@
-const STATS = [
-  { value: "+50", unit: "empresas",   desc: "en México y LATAM con sistemas implementados" },
-  { value: "+10", unit: "años",       desc: "de experiencia combinada en finanzas y tecnología" },
-  { value: "CFO", unit: "Fraccional", desc: "con metodología institucional probada en alto crecimiento" },
-];
+interface Stat {
+  value: string;
+  unit: string;
+  desc: string;
+}
 
-const CREDENTIALS = [
-  "Proyectos entregados a tiempo y dentro del presupuesto",
-  "Metodología ágil con entregas parciales verificables",
-  "Confidencialidad total en cada engagement",
-  "Equipo con experiencia en startups, PyMEs y corporativos",
-];
+interface TrustContent {
+  label: string;
+  stats: Stat[];
+  credentials: string[];
+}
 
-export default function TrustSection() {
+export default function TrustSection({ content }: { content: TrustContent }) {
   return (
     <section
       className="section-space py-24 sm:py-32"
@@ -23,12 +22,12 @@ export default function TrustSection() {
           className="text-xs font-semibold uppercase tracking-widest mb-16"
           style={{ color: "#0EA5E9", fontFamily: "var(--font-inter), sans-serif" }}
         >
-          Trayectoria
+          {content.label}
         </p>
 
         {/* Stats */}
         <div className="grid grid-cols-1 gap-0 sm:grid-cols-3">
-          {STATS.map((stat, i) => (
+          {content.stats.map((stat, i) => (
             <div
               key={i}
               className="py-8 sm:py-0"
@@ -88,7 +87,7 @@ export default function TrustSection() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {CREDENTIALS.map((cred) => (
+            {content.credentials.map((cred) => (
               <div
                 key={cred}
                 className="flex items-start gap-3"
