@@ -6,22 +6,37 @@ import { useTranslations } from "next-intl";
 export default function ContactForm() {
   const t = useTranslations("contact.form");
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [fields, setFields] = useState({ name: "", email: "", company: "", message: "" });
+
+  const set = (key: keyof typeof fields) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+      setFields((prev) => ({ ...prev, [key]: e.target.value }));
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    if (!fields.name.trim() || !fields.message.trim()) {
+      setStatus("error");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!fields.email.trim() || !emailRegex.test(fields.email)) {
+      setStatus("error");
+      return;
+    }
+
     setStatus("sending");
-    const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form));
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(fields),
       });
       if (res.ok) {
         setStatus("success");
-        form.reset();
+        setFields({ name: "", email: "", company: "", message: "" });
       } else {
         setStatus("error");
       }
@@ -41,41 +56,30 @@ export default function ContactForm() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Honeypot: hidden from humans, bots fill it in */}
-          <div style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none" }} aria-hidden="true" tabIndex={-1}>
-            <input name="website" type="text" autoComplete="off" tabIndex={-1} />
-          </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div>
-              <label className="mb-1 block text-sm font-medium text-white/70">
-                {t("name")}
-              </label>
-              <input name="name" type="text" required className="input-space" />
+              <label className="mb-1 block text-sm font-medium text-white/70">{t("name")}</label>
+              <input type="text" required className="input-space" value={fields.name} onChange={set("name")} />
             </div>
             <div>
-              <label className="mb-1 block text-sm font-medium text-white/70">
-                {t("email")}
-              </label>
-              <input name="email" type="email" required className="input-space" />
+              <label className="mb-1 block text-sm font-medium text-white/70">{t("email")}</label>
+              <input type="email" required className="input-space" value={fields.email} onChange={set("email")} />
             </div>
           </div>
 
           <div>
-            <label className="mb-1 block text-sm font-medium text-white/70">
-              {t("company")}
-            </label>
-            <input name="company" type="text" className="input-space" />
+            <label className="mb-1 block text-sm font-medium text-white/70">{t("company")}</label>
+            <input type="text" className="input-space" value={fields.company} onChange={set("company")} />
           </div>
 
           <div>
-            <label className="mb-1 block text-sm font-medium text-white/70">
-              {t("message")}
-            </label>
+            <label className="mb-1 block text-sm font-medium text-white/70">{t("message")}</label>
             <textarea
-              name="message"
               required
               rows={5}
               className="input-space resize-none"
+              value={fields.message}
+              onChange={set("message")}
             />
           </div>
 

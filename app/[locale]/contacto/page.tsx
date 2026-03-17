@@ -7,9 +7,9 @@ import { MagnetizeButton } from "@/components/ui/magnetize-button";
 type Step = 1 | 2 | 3;
 
 const SIZE_OPTIONS    = ["1–10 empleados", "11–50 empleados", "51–200 empleados", "200+ empleados"];
-const REVENUE_OPTIONS = ["< $1M MXN", "$1–5M MXN", "$5–20M MXN", "$20M+ MXN", "Prefiero no decir"];
+const REVENUE_OPTIONS = ["< €500K", "€500K–2M", "€2M–10M", "€10M+", "Prefer not to say"];
 const SERVICE_OPTIONS = ["Tecnología", "Finanzas", "Ambas", "No estoy seguro"];
-const BUDGET_OPTIONS  = ["< $50K MXN", "$50–150K MXN", "$150–500K MXN", "$500K+ MXN", "Por definir"];
+const BUDGET_OPTIONS  = ["< €5K", "€5–20K", "€20–100K", "€100K+", "To be defined"];
 const START_OPTIONS   = ["Inmediatamente", "En 1–3 meses", "Estoy explorando"];
 const CONTACT_OPTIONS = ["Llamada", "WhatsApp", "Email", "Videollamada"];
 
@@ -96,9 +96,26 @@ export default function ContactoPage() {
   const [contPref, setContPref] = useState("");
   const [phone,    setPhone]    = useState("");
   const [email,    setEmail]    = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^\+?[\d\s\-(). ]{7,20}$/;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setEmailError("");
+    setPhoneError("");
+
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
+    if (phone && !phoneRegex.test(phone)) {
+      setPhoneError("Please enter a valid phone number.");
+      return;
+    }
+
     setSending(true);
     try {
       await fetch("/api/contact", {
@@ -344,7 +361,7 @@ export default function ContactoPage() {
                           <label style={labelStyle}>Nombre de la empresa</label>
                           <input
                             style={inputStyle}
-                            placeholder="Empresa S.A. de C.V."
+                            placeholder="Empresa OÜ"
                             value={company}
                             onChange={(e) => setCompany(e.target.value)}
                             required
@@ -366,7 +383,7 @@ export default function ContactoPage() {
                         <label style={labelStyle}>País / Ciudad</label>
                         <input
                           style={inputStyle}
-                          placeholder="Ciudad de México, México"
+                          placeholder="Tallinn, Estonia"
                           value={city}
                           onChange={(e) => setCity(e.target.value)}
                         />
@@ -480,23 +497,39 @@ export default function ContactoPage() {
                         <div>
                           <label style={labelStyle}>Teléfono / WhatsApp</label>
                           <input
-                            style={inputStyle}
+                            style={{
+                              ...inputStyle,
+                              borderColor: phoneError ? "rgba(239,68,68,0.6)" : undefined,
+                            }}
                             type="tel"
-                            placeholder="+52 55 1234 5678"
+                            placeholder="+372 5192 2133"
                             value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
+                            onChange={(e) => { setPhone(e.target.value); setPhoneError(""); }}
                           />
+                          {phoneError && (
+                            <p style={{ color: "#f87171", fontSize: "0.75rem", marginTop: "0.25rem", fontFamily: "var(--font-inter), sans-serif" }}>
+                              {phoneError}
+                            </p>
+                          )}
                         </div>
                         <div>
                           <label style={labelStyle}>Correo electrónico *</label>
                           <input
-                            style={inputStyle}
+                            style={{
+                              ...inputStyle,
+                              borderColor: emailError ? "rgba(239,68,68,0.6)" : undefined,
+                            }}
                             type="email"
-                            placeholder="juan@empresa.com"
+                            placeholder="name@company.eu"
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e) => { setEmail(e.target.value); setEmailError(""); }}
                             required
                           />
+                          {emailError && (
+                            <p style={{ color: "#f87171", fontSize: "0.75rem", marginTop: "0.25rem", fontFamily: "var(--font-inter), sans-serif" }}>
+                              {emailError}
+                            </p>
+                          )}
                         </div>
                       </div>
 
@@ -597,7 +630,9 @@ export default function ContactoPage() {
                   Agenda una sesión de diagnóstico de 30 minutos sin costo.
                 </p>
                 <a
-                  href="#"
+                  href="https://wa.me/37251922133"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-gold-primary inline-flex mt-5 rounded-xl px-6 py-3 text-sm w-full justify-center"
                 >
                   Agendar Diagnóstico Ahora
@@ -606,7 +641,7 @@ export default function ContactoPage() {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/521234567890"
+                href="https://wa.me/37251922133"
                 className="btn-ghost-border inline-flex rounded-xl px-6 py-3 text-sm w-full justify-center items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
