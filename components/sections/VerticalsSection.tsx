@@ -24,7 +24,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
       </div>
 
       {/* Two-panel split — both dark, differentiated by surface */}
-      <div className="grid grid-cols-1 lg:grid-cols-2" style={{ minHeight: "620px" }}>
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:min-h-[620px]">
 
         {/* ── Left: Tech Panel ── */}
         <div
@@ -104,7 +104,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
             </ul>
           </div>
 
-          <div className="relative mt-10">
+          <div className="relative mt-10 flex lg:block justify-center">
             <Link
               href={`/${locale}/soluciones-tecnologicas`}
               className="inline-flex items-center gap-2 text-sm font-semibold transition-colors group"
@@ -123,7 +123,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
         >
           {/* Cyan corner glow */}
           <div
-            className="absolute top-0 right-0 w-64 h-64 pointer-events-none"
+            className="absolute top-0 right-0 w-32 h-32 lg:w-64 lg:h-64 pointer-events-none"
             aria-hidden="true"
             style={{
               background: "radial-gradient(ellipse at top right, rgba(2,132,199,0.10) 0%, transparent 65%)",
@@ -182,7 +182,7 @@ export default function VerticalsSection({ locale }: { locale: string }) {
             </ul>
           </div>
 
-          <div className="relative mt-10">
+          <div className="relative mt-10 flex lg:block justify-center">
             <Link
               href={`/${locale}/soluciones-financieras`}
               className="inline-flex items-center gap-2 text-sm font-semibold transition-colors group"

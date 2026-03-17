@@ -7,12 +7,13 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chatear por WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-13 w-13 items-center justify-center rounded-full transition-transform hover:-translate-y-1"
+      className="fixed bottom-8 right-5 sm:bottom-6 sm:right-6 z-50 flex items-center justify-center rounded-full transition-transform hover:-translate-y-1"
       style={{
         width: "52px",
         height: "52px",
         background: "#25D366",
         boxShadow: "0 0 24px rgba(37,211,102,0.35), 0 4px 14px rgba(0,0,0,0.4)",
+        marginBottom: "env(safe-area-inset-bottom, 0px)",
       }}
     >
       <svg

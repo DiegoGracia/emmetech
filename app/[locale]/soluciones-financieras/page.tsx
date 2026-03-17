@@ -145,7 +145,7 @@ export default async function FinancialServicesPage() {
             sustituyen el caos por estructura real.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
             <MagnetizeButton
               href={`/${locale}/contacto`}
               variant="primary"
@@ -259,8 +259,9 @@ export default async function FinancialServicesPage() {
                   </p>
                 </div>
 
+                {/* Tag — hidden on mobile to avoid orphaned row */}
                 <span
-                  className="shrink-0 self-start"
+                  className="hidden sm:inline-block shrink-0 self-start"
                   style={{
                     fontFamily: "var(--font-inter), sans-serif",
                     fontSize: "0.7rem",
@@ -299,8 +300,8 @@ export default async function FinancialServicesPage() {
             La transformación
           </p>
 
-          {/* Column headers */}
-          <div className="grid grid-cols-[1fr_auto_1fr] gap-4 mb-4">
+          {/* Column headers — hidden on mobile, shown sm+ */}
+          <div className="hidden sm:grid grid-cols-[1fr_auto_1fr] gap-4 mb-4">
             <span
               style={{
                 fontFamily: "var(--font-inter), sans-serif",
@@ -333,43 +334,63 @@ export default async function FinancialServicesPage() {
             style={{ borderColor: "rgba(255,255,255,0.06)" }}
           >
             {BEFORE_AFTER.map(([before, after], i) => (
-              <div
-                key={i}
-                className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center py-5"
-              >
-                <span
-                  style={{
-                    fontFamily: "var(--font-inter), sans-serif",
-                    fontSize: "clamp(0.85rem, 1.5vw, 1rem)",
-                    color: "rgba(255,255,255,0.35)",
-                    lineHeight: 1.4,
-                    fontWeight: 400,
-                    textDecoration: "line-through",
-                    textDecorationColor: "rgba(255,255,255,0.15)",
-                  }}
-                >
-                  {before}
-                </span>
-                <span
-                  style={{
-                    color: "rgba(14,165,233,0.45)",
-                    fontSize: "1rem",
-                    textAlign: "center",
-                  }}
-                >
-                  →
-                </span>
-                <span
-                  style={{
-                    fontFamily: "var(--font-inter), sans-serif",
-                    fontSize: "clamp(0.85rem, 1.5vw, 1rem)",
-                    color: "rgba(255,255,255,0.80)",
-                    lineHeight: 1.4,
-                    fontWeight: 500,
-                  }}
-                >
-                  {after}
-                </span>
+              <div key={i} className="py-5">
+                {/* Desktop: 3-column side-by-side */}
+                <div className="hidden sm:grid grid-cols-[1fr_auto_1fr] gap-4 items-center">
+                  <span
+                    style={{
+                      fontFamily: "var(--font-inter), sans-serif",
+                      fontSize: "clamp(0.9rem, 1.5vw, 1rem)",
+                      color: "rgba(255,255,255,0.35)",
+                      lineHeight: 1.4,
+                      fontWeight: 400,
+                      textDecoration: "line-through",
+                      textDecorationColor: "rgba(255,255,255,0.15)",
+                    }}
+                  >
+                    {before}
+                  </span>
+                  <span style={{ color: "rgba(14,165,233,0.45)", fontSize: "1rem", textAlign: "center" }}>→</span>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-inter), sans-serif",
+                      fontSize: "clamp(0.9rem, 1.5vw, 1rem)",
+                      color: "rgba(255,255,255,0.80)",
+                      lineHeight: 1.4,
+                      fontWeight: 500,
+                    }}
+                  >
+                    {after}
+                  </span>
+                </div>
+                {/* Mobile: stacked */}
+                <div className="sm:hidden flex flex-col gap-1.5">
+                  <span
+                    style={{
+                      fontFamily: "var(--font-inter), sans-serif",
+                      fontSize: "0.875rem",
+                      color: "rgba(255,255,255,0.35)",
+                      lineHeight: 1.5,
+                      fontWeight: 400,
+                      textDecoration: "line-through",
+                      textDecorationColor: "rgba(255,255,255,0.15)",
+                    }}
+                  >
+                    {before}
+                  </span>
+                  <span style={{ color: "rgba(14,165,233,0.45)", fontSize: "0.8rem" }}>↓</span>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-inter), sans-serif",
+                      fontSize: "0.9rem",
+                      color: "rgba(255,255,255,0.80)",
+                      lineHeight: 1.5,
+                      fontWeight: 600,
+                    }}
+                  >
+                    {after}
+                  </span>
+                </div>
               </div>
             ))}
           </div>

@@ -12,7 +12,7 @@ export default function ProblemSection() {
         </p>
 
         {/* Asymmetric layout */}
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[5fr_7fr] lg:gap-20 items-start">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[5fr_7fr] lg:gap-20 items-start">
 
           {/* Left — pull quote */}
           <div>
@@ -37,7 +37,7 @@ export default function ProblemSection() {
               aria-hidden="true"
               style={{
                 fontFamily: "var(--font-inter), sans-serif",
-                fontSize: "clamp(5rem, 14vw, 10rem)",
+                fontSize: "clamp(4rem, 14vw, 10rem)",
                 fontWeight: 800,
                 lineHeight: 1,
                 color: "rgba(14,165,233,0.05)",

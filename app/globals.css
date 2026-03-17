@@ -103,7 +103,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    overflow-x: hidden;
+  }
   body {
+    overflow-x: hidden;
     background-color: #04060F;
     color: #FFFFFF;
     font-family: var(--font-inter), var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
@@ -383,6 +387,16 @@
   /* Legacy cream → void mid */
   .panel-cream { background: #070D1A; color: rgba(255,255,255,0.85); }
   .panel-navy  { background: #04060F; color: #FFFFFF; }
+}
+
+/* ═══════════════════════════════════════════════
+   MOBILE READING COMFORT
+═══════════════════════════════════════════════ */
+@media (max-width: 639px) {
+  p {
+    text-align: justify;
+    hyphens: auto;
+  }
 }
 
 /* ═══════════════════════════════════════════════

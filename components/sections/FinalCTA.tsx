@@ -13,7 +13,7 @@ export default function FinalCTA({
 }: FinalCTAProps) {
   return (
     <section className="section-space py-20 sm:py-24" style={{ background: "#02040B" }}>
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-8">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
         <p
           style={{
             fontFamily: "var(--font-inter), sans-serif",
@@ -30,7 +30,7 @@ export default function FinalCTA({
 
         <Link
           href={`/${locale}/contacto`}
-          className="shrink-0 inline-flex items-center gap-2 text-sm font-semibold transition-colors group"
+          className="shrink-0 inline-flex items-center gap-2 text-sm font-semibold transition-colors group self-center sm:self-auto"
           style={{
             color: "#0EA5E9",
             fontFamily: "var(--font-inter), sans-serif",

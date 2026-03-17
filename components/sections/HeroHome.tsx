@@ -145,7 +145,7 @@ export default function HeroHome() {
 
         {/* CTAs */}
         <div
-          className="mt-10 flex flex-wrap gap-4 animate-fade-slide-up delay-400"
+          className="mt-10 flex flex-wrap gap-4 justify-center sm:justify-start animate-fade-slide-up delay-400"
           style={{ opacity: 0 }}
         >
           <MagnetizeButton

@@ -33,7 +33,7 @@ export default function MidCTA({
         className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none"
         aria-hidden="true"
         style={{
-          width: "600px",
+          width: "min(600px, 100vw)",
           height: "200px",
           background: "radial-gradient(ellipse at top, rgba(2,132,199,0.12) 0%, transparent 70%)",
         }}

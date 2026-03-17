@@ -35,7 +35,7 @@ function SelectChips({
             key={opt}
             type="button"
             onClick={() => onChange(opt)}
-            className="px-4 py-2 rounded-full text-sm transition-all"
+            className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm transition-all"
             style={{
               fontFamily: "var(--font-inter), sans-serif",
               fontWeight: isSelected ? 500 : 400,
@@ -157,7 +157,7 @@ export default function ContactoPage() {
             className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none"
             aria-hidden="true"
             style={{
-              width: "600px",
+              width: "min(600px, 100vw)",
               height: "300px",
               background: "radial-gradient(ellipse at top, rgba(2,132,199,0.10) 0%, transparent 70%)",
             }}
@@ -235,7 +235,7 @@ export default function ContactoPage() {
       {/* ── Form + Trust ── */}
       <section className="section-space py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[3fr_2fr] lg:gap-16 items-start">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[3fr_2fr] lg:gap-16 items-start">
 
             {/* ── Left: Form ── */}
             <div>
@@ -283,7 +283,33 @@ export default function ContactoPage() {
                 <form onSubmit={handleSubmit}>
                   {/* Progress */}
                   <div className="mb-8">
-                    <div className="flex justify-between mb-3">
+                    {/* Mobile: compact step counter */}
+                    <div className="flex sm:hidden justify-between items-center mb-3">
+                      <span
+                        className="text-xs"
+                        style={{
+                          fontFamily: "var(--font-inter), sans-serif",
+                          fontWeight: 600,
+                          color: "#0EA5E9",
+                          letterSpacing: "0.04em",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {["Tu empresa", "Tu necesidad", "Contacto"][step - 1]}
+                      </span>
+                      <span
+                        className="text-xs"
+                        style={{
+                          fontFamily: "var(--font-inter), sans-serif",
+                          color: "rgba(255,255,255,0.28)",
+                          letterSpacing: "0.04em",
+                        }}
+                      >
+                        {step} / 3
+                      </span>
+                    </div>
+                    {/* Desktop: full label row */}
+                    <div className="hidden sm:flex justify-between mb-3">
                       {(["Tu empresa", "Tu necesidad", "Contacto"] as const).map(
                         (label, i) => (
                           <span

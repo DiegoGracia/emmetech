@@ -91,7 +91,7 @@ export default async function TechServicesPage() {
           className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none"
           aria-hidden="true"
           style={{
-            width: "800px",
+            width: "min(800px, 100vw)",
             height: "400px",
             background: "radial-gradient(ellipse at top, rgba(2,132,199,0.14) 0%, transparent 70%)",
           }}
@@ -148,7 +148,7 @@ export default async function TechServicesPage() {
             con propósito de negocio.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
             <MagnetizeButton
               href={`/${locale}/contacto`}
               variant="primary"
@@ -263,9 +263,9 @@ export default async function TechServicesPage() {
                   </p>
                 </div>
 
-                {/* Tag */}
+                {/* Tag — hidden on mobile to avoid orphaned row */}
                 <span
-                  className="shrink-0 self-start"
+                  className="hidden sm:inline-block shrink-0 self-start"
                   style={{
                     fontFamily: "var(--font-inter), sans-serif",
                     fontSize: "0.7rem",
