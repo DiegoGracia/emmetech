@@ -1,59 +1,81 @@
 {
   "nav": {
     "home": "Inicio",
+    "tech": "Tecnología",
+    "finance": "Finanzas",
+    "contact": "Contacto",
     "about": "Nosotros",
     "services": "Servicios",
-    "contact": "Contacto",
-    "get_started": "Empezar"
+    "get_started": "Agendar Diagnóstico",
+    "cta": "Agendar Diagnóstico"
   },
   "home": {
     "hero": {
-      "tagline": "Expertos Digitales Bálticos",
-      "title": "Soluciones Digitales de Nivel Empresarial. Precio Fijo.",
-      "subtitle": "EMXTECH entrega soluciones digitales de cumplimiento EAA a las pymes del Báltico — precio fijo transparente, certificación WCAG 2.1 AA y EN 301 549, sin sorpresas.",
-      "cta_primary": "Iniciar un Proyecto",
-      "cta_secondary": "Ver Servicios"
+      "badge": "Estrategia · Tecnología · Finanzas",
+      "tagline": "Estrategia · Tecnología · Finanzas",
+      "title": "Tu empresa necesita más que operaciones — necesita sistemas.",
+      "subtitle": "Combinamos dirección financiera de alto nivel con tecnología a medida para que tu empresa opere con claridad, crezca con estructura y escale sin depender del caos.",
+      "cta_primary": "Agendar Diagnóstico",
+      "cta_secondary": "Conocer los Servicios"
     },
     "services_section": {
-      "title": "Nuestros Servicios",
-      "subtitle": "Soluciones digitales de nivel empresarial para pymes bálticas."
+      "title": "Dos Verticales. Una Visión.",
+      "subtitle": "Tecnología y finanzas estratégicas para empresas que van en serio."
     },
     "cta_strip": {
-      "title": "¿Listo para construir algo grande?",
-      "subtitle": "Hablemos de tu proyecto. Sin compromisos, sin presión.",
-      "cta": "Solicitar Presupuesto"
+      "title": "¿Listo para operar con estructura?",
+      "subtitle": "Agenda un diagnóstico sin costo y descubre exactamente qué necesita tu empresa.",
+      "cta": "Agendar Diagnóstico"
     }
   },
-  "services": {
-    "page_title": "Servicios",
-    "page_subtitle": "Soluciones digitales de nivel empresarial, con cumplimiento EAA y bajo estándares europeos."
+  "tech": {
+    "hero": {
+      "badge": "Soluciones Tecnológicas",
+      "headline": "Construimos los sistemas digitales que hacen operar y crecer a tu empresa",
+      "sub": "Desde arquitectura web hasta automatización de procesos — tecnología con propósito de negocio.",
+      "cta_primary": "Cotizar Proyecto",
+      "cta_secondary": "Agendar Diagnóstico"
+    }
   },
-  "about": {
-    "title": "Sobre EMXTECH",
-    "subtitle": "Una empresa de servicios digitales en remoto construida para el ecosistema báltico.",
-    "mission_label": "Nuestra Misión",
-    "vision_label": "Nuestra Visión",
-    "mission": "Empoderar a las pymes bálticas con soluciones digitales de precio fijo y nivel empresarial — entregadas por un equipo experto distribuido con la precisión de una agencia boutique y la agilidad de una startup.",
-    "vision": "Convertirnos en la empresa de servicios digitales en remoto más confiable del ecosistema báltico y de e-Residencia para 2029, reconocida por su profundidad técnica, rigor financiero y excelencia operativa."
+  "finance": {
+    "hero": {
+      "badge": "Soluciones Financieras",
+      "headline": "Control total de tus finanzas, procesos y crecimiento",
+      "sub": "Dirección financiera de alto nivel + sistemas operativos que sustituyen el caos por estructura real.",
+      "cta_primary": "Agendar Diagnóstico",
+      "cta_secondary": "Solicitar Consultoría"
+    }
   },
   "contact": {
-    "title": "Contáctanos",
-    "subtitle": "Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas.",
+    "title": "Cuéntanos sobre tu empresa",
+    "subtitle": "Respondemos en menos de 24 horas. Tu información es completamente confidencial.",
+    "whatsapp_cta": "Chatear por WhatsApp",
     "form": {
       "name": "Nombre Completo",
       "email": "Correo Electrónico",
       "company": "Empresa (opcional)",
       "message": "¿En qué podemos ayudarte?",
-      "submit": "Enviar Mensaje",
+      "submit": "Solicitar Cotización",
       "sending": "Enviando...",
       "success": "¡Mensaje enviado! Nos pondremos en contacto pronto.",
       "error": "Algo salió mal. Por favor intenta de nuevo."
-    },
-    "whatsapp_cta": "Chatear por WhatsApp"
+    }
+  },
+  "services": {
+    "page_title": "Servicios",
+    "page_subtitle": "Soluciones estratégicas de tecnología y finanzas para empresas en LATAM."
+  },
+  "about": {
+    "title": "Sobre Emmetech",
+    "subtitle": "Tecnología y dirección financiera para empresas que van en serio.",
+    "mission_label": "Nuestra Misión",
+    "vision_label": "Nuestra Visión",
+    "mission": "Empoderar a las empresas de LATAM con sistemas financieros y tecnológicos de alto nivel — para que crezcan con estructura, operen con claridad y escalen sin depender del caos.",
+    "vision": "Convertirnos en el socio estratégico de referencia para empresas en crecimiento en México y LATAM, reconocidos por nuestra profundidad técnica, rigor financiero y excelencia operativa."
   },
   "footer": {
-    "tagline": "Servicios digitales en remoto para el ecosistema báltico.",
-    "links_title": "Enlaces Rápidos",
+    "tagline": "Tecnología y dirección financiera para empresas que van en serio.",
+    "links_title": "Navegación",
     "services_title": "Servicios",
     "rights": "Todos los derechos reservados."
   }

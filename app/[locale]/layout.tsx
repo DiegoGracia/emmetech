@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,18 +7,20 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SpaceBackground from "@/components/layout/SpaceBackground";
-import NeuralNetwork from "@/components/layout/NeuralNetwork";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import "../globals.css";
 
-const geist = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "EMXTECH — Baltic Digital Experts",
+  title: "Emmetech — Tecnología & Dirección Financiera para LATAM",
   description:
-    "Fast, affordable, and measurable digital solutions for Baltic SMEs. Web development, digital marketing, and IT consulting.",
+    "Combinamos dirección financiera de alto nivel con tecnología a medida para que tu empresa opere con claridad, crezca con estructura y escale sin depender del caos.",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
@@ -41,13 +43,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${geist.variable} font-sans antialiased relative`}>
+      <body className={`${inter.variable} font-sans antialiased relative`}>
         <NextIntlClientProvider messages={messages}>
           <SpaceBackground />
-          <NeuralNetwork />
           <Header />
           <main className="relative z-10">{children}</main>
           <Footer />
+          <WhatsAppFloat />
         </NextIntlClientProvider>
       </body>
     </html>
