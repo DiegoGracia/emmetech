@@ -44,20 +44,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
-  try {
-    const { Resend } = await import("resend");
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    await resend.emails.send({
-      from: "noreply@emxtech.eu",
-      to: "info@emxtech.eu",
-      subject: `New contact from ${name}`,
-      html: `<p><strong>Name:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Company:</strong> ${company || "—"}</p>
-             <p><strong>Message:</strong> ${message}</p>`,
-    });
-  } catch (err) {
-    console.error("Email send failed:", err);
+  const { Resend } = await import("resend");
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const { error } = await resend.emails.send({
+    from: "noreply@emxtech.eu",
+    to: "info@emxtech.eu",
+    replyTo: email,
+    subject: `New contact from ${name}`,
+    html: `<p><strong>Name:</strong> ${name}</p>
+           <p><strong>Email:</strong> ${email}</p>
+           <p><strong>Company:</strong> ${company || "—"}</p>
+           <p><strong>Message:</strong> ${message}</p>`,
+  });
+
+  if (error) {
+    console.error("Resend error:", error);
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
 
   return NextResponse.json({ ok: true });
