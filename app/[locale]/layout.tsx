@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Emmetech — Tecnología & Dirección Financiera para LATAM",
+  title: "Emmetech — Technology & Financial Leadership for Europe",
   description:
     "Combinamos dirección financiera de alto nivel con tecnología a medida para que tu empresa opere con claridad, crezca con estructura y escale sin depender del caos.",
   icons: {

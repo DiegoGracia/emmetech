@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "tech": "Technologie",
+    "finance": "Finanzen",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "get_started": "Diagnose vereinbaren",
+    "cta": "Diagnose vereinbaren"
+  },
+  "home": {
+    "hero": {
+      "badge": "Strategie · Technologie · Finanzen",
+      "tagline": "Strategie · Technologie · Finanzen",
+      "title": "Ihr Unternehmen braucht mehr als Betrieb — es braucht Systeme.",
+      "title_part1": "Ihr Unternehmen braucht mehr als Betrieb —",
+      "title_spark": "es braucht Systeme.",
+      "morphing": [
+        "Echte finanzielle Kontrolle.",
+        "Maßgeschneiderte digitale Architektur.",
+        "Skalierbarkeit ohne Chaos."
+      ],
+      "body": "Wir verbinden erfahrene Finanzführung mit maßgeschneiderter Technologie, damit Ihr Unternehmen mit Klarheit arbeitet, mit Struktur wächst und ohne Chaos skaliert.",
+      "cta_primary": "Diagnose vereinbaren",
+      "cta_secondary": "Leistungen erkunden",
+      "subtitle": "Wir verbinden erfahrene Finanzführung mit maßgeschneiderter Technologie, damit Ihr Unternehmen mit Klarheit arbeitet, mit Struktur wächst und ohne Chaos skaliert."
+    },
+    "services_section": {
+      "title": "Zwei Bereiche. Eine Vision.",
+      "subtitle": "Strategische Technologie und Finanzen für Unternehmen mit Ambitionen."
+    },
+    "cta_strip": {
+      "title": "Bereit, mit Struktur zu arbeiten?",
+      "subtitle": "Vereinbaren Sie eine kostenlose Diagnose und erfahren Sie genau, was Ihr Unternehmen braucht.",
+      "cta": "Diagnose vereinbaren"
+    },
+    "problem": {
+      "label": "Das Problem, das wir lösen",
+      "quote": "78% der Unternehmen in Europa treffen finanzielle Entscheidungen ohne Echtzeit-Transparenz.",
+      "heading": "Die meisten wachsenden Unternehmen arbeiten mit Tabellenkalkulationen, Bauchentscheidungen und unverbundener Technologie.",
+      "body1_pre": "Es ist kein Talent-Problem. Es ist ein",
+      "body1_strong": "Struktur",
+      "body1_post": "-Problem. Ohne echte Finanzsysteme und mit Ihrem Unternehmen verbundene Technologie wird Skalierung zur Last — nicht zur Errungenschaft.",
+      "body2": "Unternehmen, die skalieren, tun dies nicht durch härteres Arbeiten — sie tun es mit besseren Systemen, größerer Transparenz und datenbasierten Entscheidungen."
+    },
+    "verticals": {
+      "tech_label": "Technologielösungen",
+      "tech_heading": "Digitale Systeme, die Ihr Unternehmen wachsen lassen",
+      "tech_body": "Wir bauen keine Seiten — wir bauen Geschäftstools. Webentwicklung, E-Commerce, maßgeschneiderte Software, Integrationen und Automatisierung mit strategischem Zweck.",
+      "tech_items": [
+        "Unternehmens-Webentwicklung",
+        "E-Commerce & Verkaufsplattformen",
+        "Maßgeschneiderte Software",
+        "Integrationen & APIs",
+        "Prozessautomatisierung"
+      ],
+      "tech_link": "Technologie erkunden",
+      "finance_label": "Finanzlösungen",
+      "finance_heading": "Vollständige Kontrolle über Ihre Zahlen und Ihre Zukunft",
+      "finance_body": "Fraktionaler CFO, KPI-Dashboards, 5-Jahres-Finanzmodelle und operative Institutionalisierung. Ihr Unternehmen mit echter Transparenz und Ausrichtung.",
+      "finance_items": [
+        "Fraktionaler CFO",
+        "Cashflow-Kontrolle",
+        "Finanz-KPI-Dashboards",
+        "5-Jahres-Finanzmodell",
+        "Operative Institutionalisierung"
+      ],
+      "finance_link": "Finanzen erkunden"
+    },
+    "outcomes": {
+      "label": "Was wir gemeinsam aufbauen",
+      "items": [
+        "Wir ersetzen Tabellenkalkulations-Chaos durch Echtzeit-Klarheit",
+        "Wir bauen Systeme, die ohne Sie funktionieren",
+        "Wir machen Ihre Website zum Vertriebswerkzeug",
+        "Wir gestalten das technologische Fundament für Skalierung",
+        "Wir modellieren Ihr 5-jähriges Finanzwachstum",
+        "Wir institutionalisieren, was heute vom Gründer abhängt"
+      ]
+    },
+    "trust": {
+      "label": "Erfolgsbilanz",
+      "stats": [
+        { "value": "+50", "unit": "Unternehmen", "desc": "europaweit mit implementierten Systemen" },
+        { "value": "+10", "unit": "Jahre",        "desc": "kombinierte Erfahrung in Finanzen und Technologie" },
+        { "value": "CFO", "unit": "Fraktional",   "desc": "mit bewährter institutioneller Methodik bei starkem Wachstum" }
+      ],
+      "credentials": [
+        "Projekte pünktlich und im Budget geliefert",
+        "Agile Methodik mit verifizierbaren Teillieferungen",
+        "Vollständige Vertraulichkeit bei jedem Engagement",
+        "Team mit Erfahrung in Startups, KMUs und Konzernen"
+      ]
+    },
+    "mid_cta": {
+      "headline": "Bereit, mit Struktur zu arbeiten?",
+      "sub": "Vereinbaren Sie eine kostenlose Diagnose und erfahren Sie genau, was Ihr Unternehmen braucht.",
+      "primary": "Diagnose vereinbaren",
+      "secondary": "Angebot anfordern"
+    },
+    "final_cta": {
+      "headline": "Ihr Unternehmen hat bereits das Potenzial. Wir sorgen für die Systeme.",
+      "cta": "Mit einem Spezialisten sprechen"
+    }
+  },
+  "tech": {
+    "hero": {
+      "badge": "Technologielösungen",
+      "headline": "Wir bauen die digitalen Systeme, die Ihr Unternehmen betreiben und wachsen lassen",
+      "sub": "Von der Webarchitektur bis zur Prozessautomatisierung — Technologie mit Geschäftszweck.",
+      "cta_primary": "Angebot anfordern",
+      "cta_secondary": "Diagnose vereinbaren"
+    }
+  },
+  "finance": {
+    "hero": {
+      "badge": "Finanzlösungen",
+      "headline": "Vollständige Kontrolle über Ihre Finanzen, Prozesse und Wachstum",
+      "sub": "Erfahrene Finanzführung + operative Systeme, die Chaos durch echte Struktur ersetzen.",
+      "cta_primary": "Diagnose vereinbaren",
+      "cta_secondary": "Beratung anfragen"
+    }
+  },
+  "contact": {
+    "title": "Erzählen Sie uns von Ihrem Unternehmen",
+    "subtitle": "Wir antworten in weniger als 24 Stunden. Ihre Informationen sind vollständig vertraulich.",
+    "whatsapp_cta": "Auf WhatsApp chatten",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "company": "Unternehmen (optional)",
+      "message": "Wie können wir helfen?",
+      "submit": "Angebot anfordern",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht gesendet! Wir werden uns bald bei Ihnen melden.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "services": {
+    "page_title": "Leistungen",
+    "page_subtitle": "Strategische Technologie- und Finanzlösungen für Unternehmen in ganz Europa."
+  },
+  "about": {
+    "title": "Über Emmetech",
+    "subtitle": "Technologie und Finanzführung für Unternehmen mit Ambitionen.",
+    "mission_label": "Unsere Mission",
+    "vision_label": "Unsere Vision",
+    "mission": "Europäische Unternehmen mit Finanz- und Technologiesystemen auf hohem Niveau stärken — damit sie mit Struktur wachsen, mit Klarheit arbeiten und ohne Abhängigkeit vom Chaos skalieren.",
+    "vision": "Der bevorzugte strategische Partner für wachsende Unternehmen in ganz Europa zu werden, anerkannt für unsere technische Tiefe, finanzielle Strenge und operative Exzellenz."
+  },
+  "footer": {
+    "tagline": "Technologie und Finanzführung für Unternehmen mit Ambitionen.",
+    "links_title": "Navigation",
+    "tech_title": "Technologie",
+    "finance_title": "Finanzen",
+    "contact_title": "Kontakt",
+    "services_title": "Leistungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "region": "Europa · Estland",
+    "tech_services": [
+      "Unternehmens-Webentwicklung",
+      "E-Commerce & Plattformen",
+      "Maßgeschneiderte Software",
+      "Automatisierung & APIs"
+    ],
+    "fin_services": [
+      "Fraktionaler CFO",
+      "Cashflow-Kontrolle",
+      "KPI-Dashboards",
+      "5-Jahres-Finanzmodell"
+    ],
+    "contact_links": [
+      "Diagnose vereinbaren",
+      "Angebot anfordern"
+    ],
+    "cta": "Mit einem Spezialisten sprechen"
+  }
+}

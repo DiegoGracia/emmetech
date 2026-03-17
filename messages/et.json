@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "home": "Avaleht",
+    "tech": "Tehnoloogia",
+    "finance": "Rahandus",
+    "contact": "Kontakt",
+    "about": "Meist",
+    "services": "Teenused",
+    "get_started": "Leppige kokku diagnoos",
+    "cta": "Leppige kokku diagnoos"
+  },
+  "home": {
+    "hero": {
+      "badge": "Strateegia · Tehnoloogia · Rahandus",
+      "tagline": "Strateegia · Tehnoloogia · Rahandus",
+      "title": "Teie ettevõte vajab enamat kui tegevust — see vajab süsteeme.",
+      "title_part1": "Teie ettevõte vajab enamat kui tegevust —",
+      "title_spark": "see vajab süsteeme.",
+      "morphing": [
+        "Reaalne finantskontroll.",
+        "Kohandatud digitaalne arhitektuur.",
+        "Skaleeritavus ilma kaoseta."
+      ],
+      "body": "Ühendame vanemtaseme finantsjuhtimise kohandatud tehnoloogiaga, et teie ettevõte toimiks selgelt, kasvaks struktuuriga ja skaleeriks ilma kaosele tuginemata.",
+      "cta_primary": "Leppige kokku diagnoos",
+      "cta_secondary": "Uurige teenuseid",
+      "subtitle": "Ühendame vanemtaseme finantsjuhtimise kohandatud tehnoloogiaga, et teie ettevõte toimiks selgelt, kasvaks struktuuriga ja skaleeriks ilma kaosele tuginemata."
+    },
+    "services_section": {
+      "title": "Kaks valdkonda. Üks visioon.",
+      "subtitle": "Strateegiline tehnoloogia ja rahandus tõsistele ettevõtetele."
+    },
+    "cta_strip": {
+      "title": "Valmis struktuuriga töötama?",
+      "subtitle": "Leppige kokku tasuta diagnoos ja avastage täpselt, mida teie ettevõte vajab.",
+      "cta": "Leppige kokku diagnoos"
+    },
+    "problem": {
+      "label": "Probleem, mille lahendame",
+      "quote": "78% Euroopa ettevõtetest teeb finantsotsuseid ilma reaalajas nähtavuseta.",
+      "heading": "Enamik kasvavaid ettevõtteid töötab tabelarvutuste, intuitiivsete otsuste ja ühendamata tehnoloogiaga.",
+      "body1_pre": "See pole talendi probleem. See on",
+      "body1_strong": "struktuuri",
+      "body1_post": " probleem. Ilma reaalsete finantssüsteemide ja teie äriga ühendatud tehnoloogiata muutub skaleerumine koormaks — mitte saavutuseks.",
+      "body2": "Ettevõtted, mis skaleeruvad, ei tee seda raskemalt töötades — nad teevad seda paremate süsteemide, suurema nähtavuse ja tegelikel andmetel põhinevate otsustega."
+    },
+    "verticals": {
+      "tech_label": "Tehnoloogialahendused",
+      "tech_heading": "Digitaalsed süsteemid, mis kasvatavad teie ettevõtet",
+      "tech_body": "Me ei ehita lehekülgi — me ehitame ärivahendeid. Veebiarendus, e-kaubandus, kohandatud tarkvara, integratsioonid ja automatiseerimine strateegilise eesmärgiga.",
+      "tech_items": [
+        "Ettevõtte veebiarendus",
+        "E-kaubandus ja müügiplatvormid",
+        "Kohandatud tarkvara",
+        "Integratsioonid ja APId",
+        "Protsesside automatiseerimine"
+      ],
+      "tech_link": "Uurige tehnoloogiat",
+      "finance_label": "Rahanduslahendused",
+      "finance_heading": "Täielik kontroll oma arvude ja tuleviku üle",
+      "finance_body": "Osaline finantsdirektor, KPI armatuurlauad, 5-aastased finantsmudelid ja operatiivne institutsioonistamine. Teie ettevõte reaalse nähtavuse ja suunaga.",
+      "finance_items": [
+        "Osaline finantsdirektor",
+        "Rahavoo kontroll",
+        "Finants-KPI armatuurlauad",
+        "5-aastane finantsmudel",
+        "Operatiivne institutsioonistamine"
+      ],
+      "finance_link": "Uurige rahandust"
+    },
+    "outcomes": {
+      "label": "Mida koos ehitame",
+      "items": [
+        "Asendame tabelarvutuste kaose reaalajas selgusega",
+        "Ehitame süsteeme, mis toimivad ilma teieta",
+        "Muudame teie veebisaidi müügivahendiks",
+        "Kujundame tehnoloogilise selgroo skaleerumiseks",
+        "Modelleerime teie 5-aastast finantskasvu",
+        "Institutsioonistame selle, mis täna sõltub asutajast"
+      ]
+    },
+    "trust": {
+      "label": "Kogemus",
+      "stats": [
+        { "value": "+50", "unit": "ettevõtet",    "desc": "üle Euroopa rakendatud süsteemidega" },
+        { "value": "+10", "unit": "aastat",       "desc": "kombineeritud kogemust rahanduses ja tehnoloogias" },
+        { "value": "CFO", "unit": "Osaline",      "desc": "tõestatud institutsionaalse metoodikaga kiires kasvus" }
+      ],
+      "credentials": [
+        "Projektid tarnitud õigeaegselt ja eelarve piires",
+        "Agiilne metoodika kontrollitavate osatarnetega",
+        "Täielik konfidentsiaalsus igas koostöös",
+        "Meeskond kogemusega idufirmades, VKEdes ja korporatsioonides"
+      ]
+    },
+    "mid_cta": {
+      "headline": "Valmis struktuuriga töötama?",
+      "sub": "Leppige kokku tasuta diagnoos ja avastage täpselt, mida teie ettevõte vajab.",
+      "primary": "Leppige kokku diagnoos",
+      "secondary": "Küsige pakkumist"
+    },
+    "final_cta": {
+      "headline": "Teie ettevõttel on juba potentsiaal. Meie paneme süsteemid paika.",
+      "cta": "Rääkige spetsialistiga"
+    }
+  },
+  "tech": {
+    "hero": {
+      "badge": "Tehnoloogialahendused",
+      "headline": "Ehitame digitaalsed süsteemid, mis panevad teie ettevõtte toimima ja kasvama",
+      "sub": "Veebiarhitektuurist protsesside automatiseerimiseni — tehnoloogia ärilise eesmärgiga.",
+      "cta_primary": "Küsige pakkumist",
+      "cta_secondary": "Leppige kokku diagnoos"
+    }
+  },
+  "finance": {
+    "hero": {
+      "badge": "Rahanduslahendused",
+      "headline": "Täielik kontroll oma rahanduse, protsesside ja kasvu üle",
+      "sub": "Vanemtaseme finantsjuhtimine + operatiivsüsteemid, mis asendavad kaose reaalse struktuuriga.",
+      "cta_primary": "Leppige kokku diagnoos",
+      "cta_secondary": "Küsige nõustamist"
+    }
+  },
+  "contact": {
+    "title": "Rääkige meile oma ettevõttest",
+    "subtitle": "Vastame vähem kui 24 tunni jooksul. Teie andmed on täiesti konfidentsiaalsed.",
+    "whatsapp_cta": "Vestlus WhatsAppis",
+    "form": {
+      "name": "Täisnimi",
+      "email": "E-posti aadress",
+      "company": "Ettevõte (valikuline)",
+      "message": "Kuidas saame aidata?",
+      "submit": "Küsige pakkumist",
+      "sending": "Saatmine...",
+      "success": "Sõnum saadetud! Võtame teiega varsti ühendust.",
+      "error": "Midagi läks valesti. Palun proovige uuesti."
+    }
+  },
+  "services": {
+    "page_title": "Teenused",
+    "page_subtitle": "Strateegilised tehnoloogia- ja rahanduslahendused ettevõtetele üle Euroopa."
+  },
+  "about": {
+    "title": "Emmetechi kohta",
+    "subtitle": "Tehnoloogia ja finantsjuhtimine tõsistele ettevõtetele.",
+    "mission_label": "Meie missioon",
+    "vision_label": "Meie visioon",
+    "mission": "Anda Euroopa ettevõtetele vanemtaseme finants- ja tehnoloogiasüsteemid — et nad kasvaksid struktuuriga, toimiksid selgelt ja skaleeruksid ilma kaosele tuginemata.",
+    "vision": "Saada eelistatud strateegiliseks partneriks kasvavatele ettevõtetele üle Euroopa, tunnustatud meie tehnilise sügavuse, finantsrigoori ja operatiivse tipptaseme eest."
+  },
+  "footer": {
+    "tagline": "Tehnoloogia ja finantsjuhtimine tõsistele ettevõtetele.",
+    "links_title": "Navigeerimine",
+    "tech_title": "Tehnoloogia",
+    "finance_title": "Rahandus",
+    "contact_title": "Kontakt",
+    "services_title": "Teenused",
+    "rights": "Kõik õigused kaitstud.",
+    "region": "Euroopa · Eesti",
+    "tech_services": [
+      "Ettevõtte veebiarendus",
+      "E-kaubandus ja platvormid",
+      "Kohandatud tarkvara",
+      "Automatiseerimine ja APId"
+    ],
+    "fin_services": [
+      "Osaline finantsdirektor",
+      "Rahavoo kontroll",
+      "KPI armatuurlauad",
+      "5-aastane finantsmudel"
+    ],
+    "contact_links": [
+      "Leppige kokku diagnoos",
+      "Küsige pakkumist"
+    ],
+    "cta": "Rääkige spetsialistiga"
+  }
+}

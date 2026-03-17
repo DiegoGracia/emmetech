@@ -1,25 +1,179 @@
 {
   "nav": {
     "home": "Accueil",
+    "tech": "Technologie",
+    "finance": "Finance",
+    "contact": "Contact",
     "about": "À propos",
     "services": "Services",
-    "contact": "Contact"
+    "get_started": "Planifier un Diagnostic",
+    "cta": "Planifier un Diagnostic"
   },
   "home": {
     "hero": {
-      "title": "Nom de l'Entreprise",
-      "subtitle": "Votre partenaire technologique de confiance en Europe.",
-      "cta_primary": "Nous contacter",
-      "cta_secondary": "Nos Services"
+      "badge": "Stratégie · Technologie · Finance",
+      "tagline": "Stratégie · Technologie · Finance",
+      "title": "Votre entreprise a besoin de plus que des opérations — elle a besoin de systèmes.",
+      "title_part1": "Votre entreprise a besoin de plus que des opérations —",
+      "title_spark": "elle a besoin de systèmes.",
+      "morphing": [
+        "Contrôle financier réel.",
+        "Architecture numérique sur mesure.",
+        "Scalabilité sans chaos."
+      ],
+      "body": "Nous combinons la direction financière senior avec une technologie sur mesure pour que votre entreprise fonctionne avec clarté, croisse avec structure et s'adapte sans dépendre du chaos.",
+      "cta_primary": "Planifier un Diagnostic",
+      "cta_secondary": "Explorer les Services",
+      "subtitle": "Nous combinons la direction financière senior avec une technologie sur mesure pour que votre entreprise fonctionne avec clarté, croisse avec structure et s'adapte sans dépendre du chaos."
+    },
+    "services_section": {
+      "title": "Deux Verticales. Une Vision.",
+      "subtitle": "Technologie et finance stratégiques pour les entreprises sérieuses."
+    },
+    "cta_strip": {
+      "title": "Prêt à opérer avec structure ?",
+      "subtitle": "Planifiez un diagnostic gratuit et découvrez exactement ce dont votre entreprise a besoin.",
+      "cta": "Planifier un Diagnostic"
+    },
+    "problem": {
+      "label": "Le problème que nous résolvons",
+      "quote": "78% des entreprises en Europe prennent des décisions financières sans visibilité en temps réel.",
+      "heading": "La plupart des entreprises en croissance fonctionnent avec des tableurs, des décisions intuitives et une technologie déconnectée.",
+      "body1_pre": "Ce n'est pas un problème de talent. C'est un problème de",
+      "body1_strong": "structure",
+      "body1_post": ". Sans systèmes financiers réels et technologie connectée à votre activité, la croissance devient un fardeau — pas une réussite.",
+      "body2": "Les entreprises qui évoluent ne le font pas en travaillant plus dur — elles le font avec de meilleurs systèmes, une plus grande visibilité et des décisions basées sur des données réelles."
+    },
+    "verticals": {
+      "tech_label": "Solutions Technologiques",
+      "tech_heading": "Systèmes numériques qui font croître votre entreprise",
+      "tech_body": "Nous ne construisons pas des pages — nous construisons des outils métier. Développement web, e-commerce, logiciels sur mesure, intégrations et automatisation avec un objectif stratégique.",
+      "tech_items": [
+        "Développement Web d'Entreprise",
+        "E-commerce & Plateformes de Vente",
+        "Logiciels sur Mesure",
+        "Intégrations & APIs",
+        "Automatisation des Processus"
+      ],
+      "tech_link": "Explorer la Technologie",
+      "finance_label": "Solutions Financières",
+      "finance_heading": "Contrôle total de vos chiffres et de votre avenir",
+      "finance_body": "CFO Fractionnel, tableaux de bord KPI, modèles financiers à 5 ans et institutionnalisation opérationnelle. Votre entreprise avec une vraie visibilité et direction.",
+      "finance_items": [
+        "CFO Fractionnel",
+        "Contrôle des Flux de Trésorerie",
+        "Tableaux de Bord KPI Financiers",
+        "Modèle Financier à 5 Ans",
+        "Institutionnalisation Opérationnelle"
+      ],
+      "finance_link": "Explorer la Finance"
+    },
+    "outcomes": {
+      "label": "Ce que nous construisons ensemble",
+      "items": [
+        "Nous remplaçons le chaos des tableurs par la clarté en temps réel",
+        "Nous construisons des systèmes qui fonctionnent sans vous",
+        "Nous transformons votre site en outil de vente",
+        "Nous concevons l'infrastructure technologique pour évoluer",
+        "Nous modélisons votre croissance financière sur 5 ans",
+        "Nous institutionnalisons ce qui dépend aujourd'hui du fondateur"
+      ]
+    },
+    "trust": {
+      "label": "Bilan",
+      "stats": [
+        { "value": "+50", "unit": "entreprises",  "desc": "à travers l'Europe avec des systèmes implémentés" },
+        { "value": "+10", "unit": "années",        "desc": "d'expérience combinée en finance et technologie" },
+        { "value": "CFO", "unit": "Fractionnel",   "desc": "avec une méthodologie institutionnelle prouvée en forte croissance" }
+      ],
+      "credentials": [
+        "Projets livrés à temps et dans les délais",
+        "Méthodologie agile avec livraisons partielles vérifiables",
+        "Confidentialité totale dans chaque engagement",
+        "Équipe avec expérience dans les startups, PME et grandes entreprises"
+      ]
+    },
+    "mid_cta": {
+      "headline": "Prêt à opérer avec structure ?",
+      "sub": "Planifiez un diagnostic gratuit et découvrez exactement ce dont votre entreprise a besoin.",
+      "primary": "Planifier un Diagnostic",
+      "secondary": "Demander un Devis"
+    },
+    "final_cta": {
+      "headline": "Votre entreprise a déjà le potentiel. Nous mettons les systèmes en place.",
+      "cta": "Parler à un Spécialiste"
+    }
+  },
+  "tech": {
+    "hero": {
+      "badge": "Solutions Technologiques",
+      "headline": "Nous construisons les systèmes numériques qui font fonctionner et croître votre entreprise",
+      "sub": "De l'architecture web à l'automatisation des processus — technologie avec un objectif métier.",
+      "cta_primary": "Demander un Devis",
+      "cta_secondary": "Planifier un Diagnostic"
+    }
+  },
+  "finance": {
+    "hero": {
+      "badge": "Solutions Financières",
+      "headline": "Contrôle total de vos finances, processus et croissance",
+      "sub": "Direction financière senior + systèmes opérationnels qui remplacent le chaos par une vraie structure.",
+      "cta_primary": "Planifier un Diagnostic",
+      "cta_secondary": "Demander une Consultation"
     }
   },
   "contact": {
-    "title": "Contactez-nous",
+    "title": "Parlez-nous de votre entreprise",
+    "subtitle": "Nous répondons en moins de 24 heures. Vos informations sont totalement confidentielles.",
+    "whatsapp_cta": "Chatter sur WhatsApp",
     "form": {
-      "name": "Nom",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Envoyer le message"
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "company": "Entreprise (optionnel)",
+      "message": "Comment pouvons-nous vous aider ?",
+      "submit": "Demander un Devis",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé ! Nous vous contacterons bientôt.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
     }
+  },
+  "services": {
+    "page_title": "Services",
+    "page_subtitle": "Solutions stratégiques de technologie et de finance pour les entreprises à travers l'Europe."
+  },
+  "about": {
+    "title": "À propos d'Emmetech",
+    "subtitle": "Technologie et direction financière pour les entreprises sérieuses.",
+    "mission_label": "Notre Mission",
+    "vision_label": "Notre Vision",
+    "mission": "Donner aux entreprises européennes des systèmes financiers et technologiques de haut niveau — pour qu'elles grandissent avec structure, fonctionnent avec clarté et évoluent sans dépendre du chaos.",
+    "vision": "Devenir le partenaire stratégique de référence pour les entreprises en croissance à travers l'Europe, reconnus pour notre profondeur technique, notre rigueur financière et notre excellence opérationnelle."
+  },
+  "footer": {
+    "tagline": "Technologie et direction financière pour les entreprises sérieuses.",
+    "links_title": "Navigation",
+    "tech_title": "Technologie",
+    "finance_title": "Finance",
+    "contact_title": "Contact",
+    "services_title": "Services",
+    "rights": "Tous droits réservés.",
+    "region": "Europe · Estonie",
+    "tech_services": [
+      "Développement Web d'Entreprise",
+      "E-commerce & Plateformes",
+      "Logiciels sur Mesure",
+      "Automatisation & APIs"
+    ],
+    "fin_services": [
+      "CFO Fractionnel",
+      "Contrôle des Flux de Trésorerie",
+      "Tableaux de Bord KPI",
+      "Modèle Financier à 5 Ans"
+    ],
+    "contact_links": [
+      "Planifier un Diagnostic",
+      "Demander un Devis"
+    ],
+    "cta": "Parler à un Spécialiste"
   }
 }

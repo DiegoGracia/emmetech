@@ -4,16 +4,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MagnetizeButton } from "@/components/ui/magnetize-button";
+import { ChevronDown, Check } from "lucide-react";
 
 const LOCALES = [
-  { code: "es", label: "ES" },
-  { code: "en", label: "EN" },
+  { code: "en", label: "English",  flag: "🇬🇧" },
+  { code: "es", label: "Español",  flag: "🇪🇸" },
+  { code: "fr", label: "Français", flag: "🇫🇷" },
+  { code: "de", label: "Deutsch",  flag: "🇩🇪" },
+  { code: "et", label: "Eesti",    flag: "🇪🇪" },
 ];
 
 function LocaleSwitcher({ locale, pathname }: { locale: string; pathname: string }) {
-  // Swap the locale prefix in the current pathname
+  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const current = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
+
   const getLocalePath = (targetLocale: string) => {
     const segments = pathname.split("/").filter(Boolean);
     const knownLocales = LOCALES.map((l) => l.code);
@@ -25,26 +32,76 @@ function LocaleSwitcher({ locale, pathname }: { locale: string; pathname: string
     return "/" + segments.join("/") || `/${targetLocale}`;
   };
 
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
-    <div className="flex items-center gap-1">
-      {LOCALES.map((l, i) => (
-        <span key={l.code} className="flex items-center gap-1">
-          {i > 0 && (
-            <span style={{ color: "rgba(255,255,255,0.20)", fontSize: "10px" }}>|</span>
-          )}
-          <Link
-            href={getLocalePath(l.code)}
-            className="text-xs font-semibold tracking-widest transition-colors duration-150"
-            style={{
-              color: locale === l.code ? "#0EA5E9" : "rgba(255,255,255,0.35)",
-              fontFamily: "var(--font-inter), sans-serif",
-              letterSpacing: "0.1em",
-            }}
-          >
-            {l.label}
-          </Link>
-        </span>
-      ))}
+    <div className="relative" ref={dropdownRef}>
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition-all duration-150"
+        style={{
+          background: "rgba(255,255,255,0.06)",
+          border: "1px solid rgba(255,255,255,0.10)",
+          color: "rgba(255,255,255,0.75)",
+          fontFamily: "var(--font-inter), sans-serif",
+          letterSpacing: "0.04em",
+        }}
+      >
+        <span>{current.flag}</span>
+        <span>{current.label}</span>
+        <ChevronDown
+          className="h-3.5 w-3.5 transition-transform duration-150"
+          style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", opacity: 0.6 }}
+        />
+      </button>
+
+      {open && (
+        <div
+          className="absolute right-0 mt-2 w-44 rounded-xl overflow-hidden z-50"
+          style={{
+            background: "rgba(8,12,28,0.97)",
+            border: "1px solid rgba(255,255,255,0.10)",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.45)",
+            backdropFilter: "blur(20px)",
+            WebkitBackdropFilter: "blur(20px)",
+          }}
+        >
+          {LOCALES.map((l) => (
+            <Link
+              key={l.code}
+              href={getLocalePath(l.code)}
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 w-full px-3 py-2 text-xs transition-colors duration-100"
+              style={{
+                color: locale === l.code ? "#0EA5E9" : "rgba(255,255,255,0.65)",
+                fontFamily: "var(--font-inter), sans-serif",
+                fontWeight: locale === l.code ? 600 : 400,
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.05)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.background = "transparent";
+              }}
+            >
+              <span className="text-sm">{l.flag}</span>
+              <span className="flex-1">{l.label}</span>
+              {locale === l.code && (
+                <Check className="h-3.5 w-3.5" style={{ color: "#0EA5E9" }} />
+              )}
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

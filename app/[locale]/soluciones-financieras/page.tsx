@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Soluciones Financieras — Emmetech",
   description:
-    "Dirección financiera de alto nivel y sistemas operativos para empresas en LATAM. CFO Fraccional, dashboards de KPIs, modelos a 5 años e institucionalización.",
+    "Dirección financiera de alto nivel y sistemas operativos para empresas en Europa. CFO Fraccional, dashboards de KPIs, modelos a 5 años e institucionalización.",
 };
 
 const SERVICES = [
@@ -57,7 +57,7 @@ const BEFORE_AFTER = [
 ];
 
 const STATS = [
-  { value: "+15",   unit: "empresas",  desc: "con CFO Fraccional activo en LATAM" },
+  { value: "+15",   unit: "empresas",  desc: "con CFO Fraccional activo en Europa" },
   { value: "$500M", unit: "MXN+",      desc: "en flujos financieros modelados" },
   { value: "5",     unit: "años",      desc: "de proyecciones promedio entregadas" },
 ];

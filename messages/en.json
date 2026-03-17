@@ -37,7 +37,7 @@
     },
     "problem": {
       "label": "The problem we solve",
-      "quote": "78% of businesses in LATAM make financial decisions without real-time visibility.",
+      "quote": "78% of businesses in Europe make financial decisions without real-time visibility.",
       "heading": "Most growing companies run on spreadsheets, gut decisions, and disconnected technology.",
       "body1_pre": "It's not a talent problem. It's a",
       "body1_strong": "structure",
@@ -82,7 +82,7 @@
     "trust": {
       "label": "Track Record",
       "stats": [
-        { "value": "+50", "unit": "companies",   "desc": "in Mexico and LATAM with implemented systems" },
+        { "value": "+50", "unit": "companies",   "desc": "across Europe with implemented systems" },
         { "value": "+10", "unit": "years",        "desc": "of combined experience in finance and technology" },
         { "value": "CFO", "unit": "Fractional",   "desc": "with proven institutional methodology in high growth" }
       ],
@@ -139,15 +139,15 @@
   },
   "services": {
     "page_title": "Services",
-    "page_subtitle": "Strategic technology and finance solutions for businesses in LATAM."
+    "page_subtitle": "Strategic technology and finance solutions for businesses across Europe."
   },
   "about": {
     "title": "About Emmetech",
     "subtitle": "Technology and financial leadership for businesses that mean business.",
     "mission_label": "Our Mission",
     "vision_label": "Our Vision",
-    "mission": "Empower LATAM businesses with senior-level financial and technology systems — so they grow with structure, operate with clarity, and scale without depending on chaos.",
-    "vision": "Become the go-to strategic partner for growing businesses in Mexico and LATAM, recognized for our technical depth, financial rigor, and operational excellence."
+    "mission": "Empower European businesses with senior-level financial and technology systems — so they grow with structure, operate with clarity, and scale without depending on chaos.",
+    "vision": "Become the go-to strategic partner for growing businesses across Europe, recognized for our technical depth, financial rigor, and operational excellence."
   },
   "footer": {
     "tagline": "Technology and financial leadership for businesses that mean business.",
@@ -157,7 +157,7 @@
     "contact_title": "Contact",
     "services_title": "Services",
     "rights": "All rights reserved.",
-    "region": "Mexico & LATAM",
+    "region": "Europe · Estonia",
     "tech_services": [
       "Corporate Web Development",
       "E-commerce & Platforms",

@@ -37,7 +37,7 @@
     },
     "problem": {
       "label": "El problema que resolvemos",
-      "quote": "El 78% de las empresas en LATAM toman decisiones financieras sin visibilidad en tiempo real.",
+      "quote": "El 78% de las empresas en Europa toman decisiones financieras sin visibilidad en tiempo real.",
       "heading": "La mayoría de las empresas en crecimiento operan con hojas de cálculo, decisiones sin datos y tecnología desconectada.",
       "body1_pre": "No es un problema de talento. Es un problema de",
       "body1_strong": "estructura",
@@ -82,7 +82,7 @@
     "trust": {
       "label": "Trayectoria",
       "stats": [
-        { "value": "+50", "unit": "empresas",   "desc": "en México y LATAM con sistemas implementados" },
+        { "value": "+50", "unit": "empresas",   "desc": "en toda Europa con sistemas implementados" },
         { "value": "+10", "unit": "años",        "desc": "de experiencia combinada en finanzas y tecnología" },
         { "value": "CFO", "unit": "Fraccional",  "desc": "con metodología institucional probada en alto crecimiento" }
       ],
@@ -139,15 +139,15 @@
   },
   "services": {
     "page_title": "Servicios",
-    "page_subtitle": "Soluciones estratégicas de tecnología y finanzas para empresas en LATAM."
+    "page_subtitle": "Soluciones estratégicas de tecnología y finanzas para empresas en Europa."
   },
   "about": {
     "title": "Sobre Emmetech",
     "subtitle": "Tecnología y dirección financiera para empresas que van en serio.",
     "mission_label": "Nuestra Misión",
     "vision_label": "Nuestra Visión",
-    "mission": "Empoderar a las empresas de LATAM con sistemas financieros y tecnológicos de alto nivel — para que crezcan con estructura, operen con claridad y escalen sin depender del caos.",
-    "vision": "Convertirnos en el socio estratégico de referencia para empresas en crecimiento en México y LATAM, reconocidos por nuestra profundidad técnica, rigor financiero y excelencia operativa."
+    "mission": "Empoderar a las empresas europeas con sistemas financieros y tecnológicos de alto nivel — para que crezcan con estructura, operen con claridad y escalen sin depender del caos.",
+    "vision": "Convertirnos en el socio estratégico de referencia para empresas en crecimiento en toda Europa, reconocidos por nuestra profundidad técnica, rigor financiero y excelencia operativa."
   },
   "footer": {
     "tagline": "Tecnología y dirección financiera para empresas que van en serio.",
@@ -157,7 +157,7 @@
     "contact_title": "Contacto",
     "services_title": "Servicios",
     "rights": "Todos los derechos reservados.",
-    "region": "México & LATAM",
+    "region": "Europa · Estonia",
     "tech_services": [
       "Desarrollo Web Corporativo",
       "E-commerce & Plataformas",

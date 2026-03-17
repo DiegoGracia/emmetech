@@ -57,7 +57,7 @@ const PROCESS = [
 ];
 
 const STATS = [
-  { value: "+40", unit: "proyectos",   desc: "entregados en LATAM" },
+  { value: "+40", unit: "proyectos",   desc: "entregados en Europa" },
   { value: "3x",  unit: "más rápido", desc: "tiempo de carga promedio en sitios rediseñados" },
   { value: "100%", unit: "custom",    desc: "sin plantillas, sin atajos" },
 ];
